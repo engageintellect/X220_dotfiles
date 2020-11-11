@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1.0;
+float alpha = 0.7;
 
 /* Terminal colors (16 first used in escape sequence) */
 #include "/home/r3dux/.cache/wal/colors-wal-st.h"
