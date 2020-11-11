@@ -1,15 +1,16 @@
-"                       _                      
-" _ __   ___  _____   _(_)_ __ ___    _ __ ___ 
-"| '_ \ / _ \/ _ \ \ / / | '_ ` _ \  | '__/ __|
-"| | | |  __/ (_) \ V /| | | | | | | | | | (__ 
-"|_| |_|\___|\___/ \_/ |_|_| |_| |_| |_|  \___|
-"##############################################
+"                           _                      
+"     _ __   ___  _____   _(_)_ __ ___    _ __ ___ 
+"    | '_ \ / _ \/ _ \ \ / / | '_ ` _ \  | '__/ __|
+"    | | | |  __/ (_) \ V /| | | | | | | | | | (__ 
+"    |_| |_|\___|\___/ \_/ |_|_| |_| |_| |_|  \___|
+"    ##############################################
 "
 " BUILD: Universal
 " VERSION: 1.5
 
 
-" PLUGINS "
+"===[ PLUGINS ]==="
+
 call plug#begin('~/.config/nvim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'scrooloose/nerdtree'
@@ -28,7 +29,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 
-" KEYBINDINGS "
+"===[ KEYBINDINGS ]==="
+
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 "nnoremap <silent> <C-q> :q<CR>
@@ -44,16 +46,19 @@ nmap <Leader>ad :CocDisable<CR>
 nmap <Leader>ae :CocEnable<CR>
 
 
+"===[ PYWAL ]==="
 
-" PYWAL "
 colorscheme wal
 set background=dark
 
 
-" AIRLINE "
+"===[ AIRLINE ]==="
+
 let g:airline_theme = 'wal'
 
-" SETTINGS "
+
+"===[ SETTINGS ]==="
+
 set nocompatible
 filetype plugin on
 set filetype=i3config
@@ -61,7 +66,6 @@ syntax enable
 set path+=**
 set wildmenu
 set wildmode=longest:full,full
-
 let NERDTreeShowHidden=1
 set number
 set relativenumber
@@ -83,13 +87,14 @@ set splitbelow
 set splitright
 set updatetime=300
 set noswapfile
-
 "set cursorline
 "set cursorcolumn
 "set set hidden                      
 "set showtabline=1
 
-" NETRW "
+
+"===[ NETRW ]==="
+
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
@@ -101,17 +106,17 @@ let g:netrw_winsize = 20
 "augroup END
 
 
-" KITE "
+"===[ KITE ]=== "
+
 let g:kite_supported_languages = ['python']
 
 
-" CURSOR BLOCK STYLE "
+"===[ CURSOR BLOCK STYLE ]==="
+
 set guicursor=n-v-c-sm:hor20,i-ci-ve:ver25-Cursor,r-cr-o:hor20
 
 
-
-
-"CoC"
+"===[ CoC ]==="
 
 " disable vim-go 'GoDef' cmd for CoC
 let g:go_def_mapping_enabled = 0

@@ -1,8 +1,8 @@
-#          _     _       _
-# _____  _| |__ | | ____| |  _ __ ___
-#/ __\ \/ / '_ \| |/ / _` | | '__/ __|
-#\__ \>  <| | | |   < (_| | | | | (__
-#|___/_/\_\_| |_|_|\_\__,_| |_|  \___|
+#              _     _       _
+#     _____  _| |__ | | ____| |  _ __ ___
+#    / __\ \/ / '_ \| |/ / _` | | '__/ __|
+#    \__ \>  <| | | |   < (_| | | | | (__
+#    |___/_/\_\_| |_|_|\_\__,_| |_|  \___|
 #
 # Build: ThinkPad X220 
 # Version: 2.0
@@ -46,7 +46,7 @@ super + b
 
 # TOGGLE POLYBAR
 super + p
-    polybar-msg cmd {hide && bspc config top_padding 0, show && bspc config top_padding 20 && bspc config top_padding 20} 
+    polybar-msg cmd {hide && bspc config top_padding 0, show && bspc config top_padding 25 && bspc config top_padding 25} 
 
 # RELOAD POLYBAR
 super + shift + p
@@ -57,23 +57,23 @@ super + shift + p
 
 # ROFI RUN
 super + shift + d
-     rofi -show run -lines 6 -eh 2 -width 300 -padding 20 -opacity "20" -font "Ubuntu Regular 10"
+     rofi -show run -lines 6 -eh 2 -width 300 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
 # ROFI WINDOWS
 super + shift + w
-     rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Ubuntu Regular 10"
+     rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
 # ROFI SSH
 super + shift + s
-     rofi -show ssh -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Ubuntu Regular 10"
+     rofi -show ssh -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
  # ROFI COMBI
 super + shift + c
-     rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Ubuntu Regular 10"
+     rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
 
 
 #===[ BROWSERS ]===#
 
 super + s 
     surf -N -z 1.0 https://web.tabliss.io/ 
-super + i
+super + w
     bspc desktop -f '^2' && qutebrowser
 super + f
     firefox
