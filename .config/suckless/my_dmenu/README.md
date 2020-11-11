@@ -1,11 +1,6 @@
-# dmenu-distrotube
+# dmenu
 
-
-# What is dmenu?
-dmenu is a dynamic menu for X, originally designed for dwm. It manages large numbers of user-defined menu items efficiently.  It is a very powerful tool that allows you to pipe information into it.  This makes dmenu a perfect utility to incorporate into your scripting.
-
-# What is dmenu-distrotube
-dmenu-distroube is my personal build of dmenu that is very heavily patched to add more functionality and more customization options.  The patches that I used in this build include:
+#PATCHES
 + dmenu-border -- adds border around dmenu window
 + dmenu-center -- centers dmenu in the middle of screen (-c)
 + dmenu-fuzzyhighlight -- fuzzy matches gets highlighted
@@ -16,8 +11,7 @@ dmenu-distroube is my personal build of dmenu that is very heavily patched to ad
 + dmenu-mousesupport -- basic mouse support
 + dmenu-numbers -- Displays number of matched and total items in top right corner
 
-# Mouse functionality
-## Mouse actions supported:
+# MOUSE 
 + Left-mouse click:
   - On prompt and input field: clear input text and selection.
   - In horizontal and vertical mode on item: select and output item (same as pressing enter).
@@ -34,7 +28,8 @@ dmenu-distroube is my personal build of dmenu that is very heavily patched to ad
   - In horizontal mode: same as left-clicking on right arrow.
   - In vertical mode: show items below.
 
-# Available flags
+
+# PROGRAM SWITCHES
 + [-l lines]
 + [-g columns]
 + [-p prompt]
@@ -52,11 +47,8 @@ dmenu-distroube is my personal build of dmenu that is very heavily patched to ad
 + [-w windowid]
 + [-c] for centering
 
-An example: dmenu_run -c -bw 2 -l 20 -g 4 -p 'Run: '
 
-This launches dmenu_run with -c (centered), -bw (border width), -l (number of vertical lines) and -g (number of grid columns).
+#USAGE EXAMPLE 
+dmenu_run -c -bw 2 -l 20 -g 4 -p 'Run: '
 
-# How to install dmenu-distrotube
-To install dmenu-distrotube on most Linux systems, simply clone this repository, then cd into the cloned directory, and finally run a: sudo make install
 
-For those that use Arch Linux (btw), you can install dmenu-distrotube-git from the AUR.  If you use yay: yay -S dmenu-distrotube-git
