@@ -28,7 +28,7 @@ alert = ${xrdb:color3:#222}
 [bar/new]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 20
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0
@@ -49,10 +49,10 @@ module-margin-left = 1
 module-margin-right = 2
 
 ; BAR FONTS
-font-0 = "Ubuntu Regular:size=10;2"
-font-1 = "Ubuntu Mono:size=10;3"
-font-2 = "Noto Sans:size=10;3"
-font-3 = "Font Awesome:style=Regular:pixelsize=10;1"
+font-0 = "Noto Sans:size=10;2"
+font-1 = "Ubuntu Mono:size=11;3"
+font-2 = "Noto Sans:size=11;3"
+font-3 = "Font Awesome:style=Regular:pixelsize=12;1"
 font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
 font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
 

@@ -1,8 +1,8 @@
-#           _
-#   _______| |__   ___ _ ____   __
-#  |_  / __| '_ \ / _ \ '_ \ \ / /
-# _ / /\__ \ | | |  __/ | | \ V /
-#(_)___|___/_| |_|\___|_| |_|\_/
+#               _
+#       _______| |__   ___ _ ____   __
+#      |_  / __| '_ \ / _ \ '_ \ \ / /
+#     _ / /\__ \ | | |  __/ | | \ V /
+#    (_)___|___/_| |_|\___|_| |_|\_/
 #
 # Version: 1.0
 # Build: ThinkPad X220
@@ -36,6 +36,11 @@ export GOPATH="$HOME/code/go"
 export GOBIN="$HOME/code/go/bin"
 export FZF_BASE="$HOME/.bin/fzf"
 
+# NODE VERSION MANAGER
+export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_commands
+
 # DISABLE FILES
 export LESSHISTFILE=-
 
@@ -44,4 +49,5 @@ export LESSHISTFILE=-
 #export ZDOTDIR="$HOME"/.config/zsh
 #export HISTFILE="$XDG_CONFIG_HOME"/zsh/.zsh_history
 export GTK2_RC_FILES="$HOME"/.config/gtk-2.0/gtkrc-2.0
+
 

@@ -19,7 +19,8 @@ xsetroot -cursor_name left_ptr
 
 #===[ AUTOSTART ]===#
 
-python /home/r3dux/bin/env/env.py
+# python /home/r3dux/bin/env/env.py
+/home/r3dux/bin/env/environment.sh
 
 
 
@@ -50,7 +51,7 @@ bspc config focus_by_distance               true
 
 bspc config border_width                    2
 bspc config window_gap                      0
-bspc config top_padding                     20
+bspc config top_padding                     25
 bspc config bottom_padding                  0
 bspc config left_padding                    0
 bspc config righ_padding                    0
@@ -96,8 +97,8 @@ bspc rule -a st-256color:st-256color state=tiled rectangle=900x600+0+0 center=tr
 bspc rule -a Alacritty rectangle=900x600+0+0 center=true
 bspc rule -a Gimp desktop='^5' state=floating follow=on
 bspc rule -a qutebrowser state=tiled rectangle=900x600+0+0 center=true
-bspc rule -a Surf state=floating rectangle=900x600+0+0 center=true
-bspc rule -a Chromium state=floating rectangle=900x600+0+0 center=true
+bspc rule -a Surf state=tiled rectangle=900x600+0+0 center=true
+bspc rule -a Chromium state=tiled rectangle=900x600+0+0 center=true
 bspc rule -a Emacs state=tiled rectangle=900x600+0+0 center=true
 bspc rule -a "VirtualBox Manager" desktop='^8' state=floating rectangle=900x600+0+0 center=true
 bspc rule -a firefox rectangle=900x600+0+0 center=true
