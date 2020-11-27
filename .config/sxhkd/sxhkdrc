@@ -54,7 +54,7 @@ super + p
 
 # RELOAD POLYBAR
 super + shift + p
-    killall polybar && polybar -r new && bspc config top_padding 20
+    killall polybar && polybar -r new && bspc config top_padding 25
 
 
 #==[ ROFI ]==#
