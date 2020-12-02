@@ -3,7 +3,8 @@ static const char *user  = "r3dux";
 static const char *group = "wheel";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "#229CA1",     /* after initialization */
+	// [INIT] =   "#229CA1",     /* after initialization */
+	[INIT] =   "black",     /* after initialization */
 	[INPUT] =  "black",   /* during input */
 	[FAILED] = "#CC3333",   /* wrong password */
 };
@@ -12,7 +13,7 @@ static const char *colorname[NUMCOLS] = {
 static const int failonclear = 1;
 
 /* default message */
-static const char * message = "ENTER PASSWORD TO RESUME";
+static const char * message = "";
 
 /* text color */
 static const char * text_color = "#ffffff";

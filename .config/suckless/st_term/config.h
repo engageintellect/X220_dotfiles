@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack Nerd Font:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Hack Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 30;
 
 /*
@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.7;
+float alpha = 1.0;
 
 /* Terminal colors (16 first used in escape sequence) */
 #include "/home/r3dux/.cache/wal/colors-wal-st.h"
