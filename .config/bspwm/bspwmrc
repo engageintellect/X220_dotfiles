@@ -33,6 +33,8 @@ xsetroot -cursor_name left_ptr
 
 #===[ CURRENT WORKSPACE LAYOUT ]===#
 
+# bspc monitor -d $(seq 1 10)
+
 # INTERNAL DISPLAY
 bspc monitor LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
 
