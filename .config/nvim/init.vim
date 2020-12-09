@@ -44,6 +44,7 @@ nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>g :Goyo<CR>
 nmap <Leader>ad :CocDisable<CR>
 nmap <Leader>ae :CocEnable<CR>
+nmap <Leader>b :buffers<CR>
 
 
 "===[ PYWAL ]==="
