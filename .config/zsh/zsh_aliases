@@ -17,6 +17,7 @@ alias zshrc='nvim ~/.zshrc'
 alias zshenv='nvim ~/.zshenv'
 
 #===[ MAIN ]===#
+alias o='xdg-open'
 alias te='trash-empty'
 alias tl='trash-list'
 alias tr='trash-restore'
@@ -76,7 +77,7 @@ alias search='pacman --color auto -Ss'
 alias ipkg='pacman -Si'
 alias install='sudo pacman --color auto -S'
 alias remove='sudo pacman --color auto -Rns'
-alias paclist='pacman --color auto -Q | less'
+alias paclist='~/bin/env/scripts/paclist.sh'
 alias psearch='pacman --color auto -Q | grep'
 alias autoclean='sudo pacman -Qdt'
 
@@ -87,6 +88,7 @@ alias SB2='ssh 192.168.0.157 -p 4320'
 alias x220='ssh 192.168.0.2 -p 4320'
 # alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@54.177.92.108'
 alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@3.101.45.224'
+alias imac='ssh josh@192.168.0.44'
 
 
 #===[ DMENU ALIASES ]===#
