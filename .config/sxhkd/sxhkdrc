@@ -28,7 +28,8 @@ Menu
 
 # LAUNCHER
 super + d
-    ~/bin/env/pywal/dmenu_pywal.sh
+    rofi -show run -font "Hack Nerd Font 12" -location 1 -width 25 -lines 100
+    # ~/bin/env/pywal/dmenu_pywal.sh
 
 # NETWORK
 super + shift + n
@@ -39,7 +40,13 @@ super + shift + n
 
 # EDIT CONFIGS
 super + shift + e
-    ~/bin/env/scripts/dmenu/dmenu_edit_configs.sh
+    ~/bin/env/scripts/edit_configs.sh
+
+# COMPILE SUCKLESS
+super + shift + c
+    ~/bin/env/scripts/compile_suckless.sh
+
+
 # CLIPMENU
 super + x
     ~/bin/env/pywal/clipmenu_pywal.sh
@@ -61,7 +68,7 @@ super + shift + p
 
 # ROFI RUN
 super + shift + d
-     rofi -show run -lines 6 -eh 2 -width 300 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
+     rofi -show run -lines 6 -eh 2 -width 350 -padding 20 -font "Hack Nerd Font 10"
 # ROFI WINDOWS
 # super + shift + w
      # rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
@@ -89,7 +96,7 @@ super + c
 
 # DMENU BOOKMARKS
 super + shift + b
-    ~/bin/env/scripts/surf/bookmarks.sh
+    ~/bin/env/scripts/bookmarks/bookmarks.sh
 
 
 # WALLY

@@ -120,7 +120,7 @@ bspc rule -a st-256color:ytop state=floating rectangle=900x600+0+0 center=true
 bspc rule -a st-256color:neofetch state=floating rectangle=900x600+0+0 center=true
 bspc rule -a st-256color:scratchy state=floating
 bspc rule -a Sxiv state=floating rectangle=1200x600+0+0 center=true
-bspc rule -a qpaeq state=floating rectangle=500x200+0+0 center=true
+bspc rule -a qpaeq state=floating rectangle=600x375+0+0 center=true
 bspc rule -a Pavucontrol state=floating rectangle=500x500+0+0 center=true
 bspc rule -a Nitrogen state=floating rectangle=500x500+0+0 center=true
 bspc rule -a Lxappearance state=floating rectangle=500x500+0+0 center=true
