@@ -28,7 +28,7 @@ Menu
 
 # LAUNCHER
 super + d
-    rofi -show run -font "Hack Nerd Font 12" -location 1 -width 25 -lines 100
+    rofi -show run -p "RUN" -font "Hack Nerd Font 10" -location 1 -width 15 -lines 100
     # ~/bin/env/pywal/dmenu_pywal.sh
 
 # NETWORK
@@ -286,20 +286,20 @@ super + {Left,Down,Up,Right}
 
 # CHANGE WINDOW GAP SIZE
 alt + k
-	bspc config window_gap {0,6,12,18,32,48,64,86}
+	bspc config window_gap {0,6,12,18,32,48,64,96,128}
 alt + j
 	bspc config window_gap {0,2,4,6,8,10,12}
 
 # EXPAND/CONTRACT FLOATING WINDOWS ON ALL SIDES
 alt + h
 	bspc node -z left -20 0; \
-	bspc node -z bottom 0 10; \
-	bspc node -z top 0 -10; \
+	bspc node -z bottom 0 20; \
+	bspc node -z top 0 -20; \
 	bspc node -z right 20 0
 alt + l
 	bspc node -z left 20 0; \
-	bspc node -z bottom 0 -10; \
-	bspc node -z top 0 10; \
+	bspc node -z bottom 0 -20; \
+	bspc node -z top 0 20; \
 	bspc node -z right -20 0
 
 ####################################################################################

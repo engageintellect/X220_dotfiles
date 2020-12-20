@@ -104,11 +104,6 @@ bindkey -v
 #===[ FZF SEARCH ]===#
 [ -f ~/.bin/fzf/.fzf.zsh ] && source ~/.bin/fzf/.fzf.zsh
 
-
-# FASD
-# eval "$(fasd --init auto)"
-
-
 ##===[ TMUX ]===#
 #[[ $- != *i* ]] && return
 ## Otherwise start tmux
@@ -121,5 +116,3 @@ bindkey -v
 
 #===[ ZSH RUNTIME ]===#
 clear && pfetch && echo "\n" && python ~/code/python/tools/fortune.py
-
-# source /home/r3dux/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

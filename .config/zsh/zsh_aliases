@@ -151,6 +151,10 @@ scomp()
 
 
 #=[ VIM OPEN ]=#
+c()
+{
+    builtin cd "$@" && ls -l;
+}
 
 v() 
 {
