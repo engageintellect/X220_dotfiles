@@ -23,8 +23,8 @@ warp_pointer		        = 0
 
 #===[ WINDOW DECORATION ]===#
 border_width          = 2
-color_focus = rgb:b7/c6/d7
-color_unfocus = rgb:10/11/16
+color_focus = rgb:3E/98/A0
+color_unfocus = rgb:0E/26/30
 region_padding        = 6
 tile_gap              = 6
 
@@ -41,11 +41,11 @@ bar_enabled		            = 0
 bar_enabled_ws[1]	        = 1
 disable_border		        = 0
 bar_border_width	        = 0
-bar_color[1] = rgb:10/11/16
+bar_color[1] = rgb:0E/26/30
 bar_border[1]		        = rgb:ff/ff/ff
 bar_border_unfocus[1]	    = rgb:00/40/40
 bar_color_selected[1]	    = rgb:00/80/80
-bar_font_color_selected = rgb:b7/c6/d7
+bar_font_color_selected = rgb:3E/98/A0
 # bar_font		            = Hack Nerd Font:pixelsize=14:antialias=true
 bar_font		            = Hack Nerd Font:pixelsize=16 , Joypixels:pixelsize=14
 # bar_font_pua		        = Font Awesome 5 Free:pixelsize=14:antialias=true
@@ -107,6 +107,8 @@ modkey = Mod4
 #===[ PROGRAMS ]===#
 program[term]		            = st
 program[alacritty]		        = alacritty
+program[python]                 = st -n python -e python
+program[node]                   = st -n node -e node
 program[surf]	                = surf -N -z 1.0 https://web.tabliss.io/
 program[qutebrowser]		    = qutebrowser
 program[chromium]		        = ~/.config/spectrwm/win_resize/chromium_resize.sh
@@ -172,7 +174,7 @@ quirk[Chromium:chromium]			                    = FLOAT
 #######################
 
 bind[bar_toggle]	            = MOD+p
-bind[bar_status]	            = MOD+Shift+p
+# bind[bar_status]	            = MOD+Shift+p
 # bind[bar_toggle_ws]	        = MOD+Shift+b
 # bind[button2]		            = MOD+v
 bind[cycle_layout]	            = MOD+Shift+l
@@ -274,7 +276,7 @@ bind[alacritty]		        = MOD+a
 bind[wind_del]		        = MOD+q
 bind[wind_kill]		        = MOD+Shift+q
 bind[quit]		            = MOD+Shift+Escape
-bind[restart_of_day]		        = MOD+Shift+r
+bind[restart_of_day]		= MOD+Shift+r
 # bind[raise_toggle]	        = MOD+Shift+r
 # bind[screenshot_all]	        = MOD+s
 # bind[screenshot_wind]	        = MOD+Shift+s
@@ -320,3 +322,5 @@ bind[emacs]                 = MOD+e
 bind[battery_status]        = MOD+b
 bind[pcmanfm]               =MOD+Shift+i
 bind[mutt]                  =MOD+Shift+g
+bind[python]                =MOD+Control+p
+bind[node]                  =MOD+Control+n

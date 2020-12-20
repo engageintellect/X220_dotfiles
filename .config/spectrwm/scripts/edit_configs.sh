@@ -23,7 +23,7 @@ quit")
 #     "$color15" -sb "$color3" -sf "$color0" -nhb "$color3" -nhf "$color0" -shb "$color3" -shf "$color15" -h 10 -l 12 -g 1 -p 'Edit config > ')
 
 # ROFI
-choice=$(echo -e "${options[0]}" | rofi -dmenu -p "EDIT CONFIG" \
+choice=$(echo -e "${options[0]}" | rofi -dmenu -m primary -p "EDIT CONFIG" \
     -font "Hack Nerd Font 10" -location 1 -width 15 -lines 100)
 
 

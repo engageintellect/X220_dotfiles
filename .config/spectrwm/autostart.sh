@@ -20,11 +20,10 @@
 touchegg &
 
 # DPI SCALING, KEY REPEAT, KEYSWAP...
-#/home/r3dux/bin/env/display_settings/dual_displays.sh
-#/home/r3dux/set_monitors.sh
 # xrandr --output LVDS1 --auto --primary
 # xrandr --output DP1 --auto --rotate left
 # xrandr --output VGA1 --auto --primary --right-of DP1
+
 xrandr --dpi 96
 xset r rate 275 200
 /usr/bin/setxkbmap -option "caps:swapescape" &
@@ -48,4 +47,5 @@ xautolock -time 20 -locker slock &
 killall -q picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --experimental-backends --config $HOME/.config/picom/picom.spectrwm &
+
 
