@@ -36,7 +36,7 @@ xsetroot -cursor_name left_ptr
 # bspc monitor -d $(seq 1 10)
 
 # INTERNAL DISPLAY
-bspc monitor LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
+bspc monitor LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
 
 # EXTERNAL DISPLAYS
 bspc monitor DisplayPort-1 -d   
