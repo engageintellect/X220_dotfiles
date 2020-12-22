@@ -12,8 +12,8 @@ while :; do
 
     # BATTERY
     if [[ $(acpi -b | awk 'NR==1 {print $4}'| sed 's/,//g') == 0% ]]; then 
-        battery=$(acpi -b | awk 'NR==2 {print $3, $4}' | sed 's/,//g' | sed 's/Unknown/Full/g') 
-    else battery=$(acpi -b | awk 'NR==1 {print $3, $4}' | sed 's/,//g' | sed 's/Unknown/Full/g')
+        battery=$(acpi -b | awk 'NR==2 {print $4}' | sed 's/,//g' | sed 's/Unknown/Full/g') 
+    else battery=$(acpi -b | awk 'NR==1 {print $4}' | sed 's/,//g' | sed 's/Unknown/Full/g')
     fi
 
     # MEMORY
@@ -29,7 +29,7 @@ while :; do
 
 
         # DISPLAY BAR
-        echo " [$ssid]   [$local_ip]    [$battery]"
+        echo " $ssid   $local_ip    $battery"
         sleep $SLEEP_SEC
 done
 

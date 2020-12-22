@@ -46,7 +46,7 @@ export LESSHISTFILE=-
 
 # CLEAN UP
 #export XINITRC="$XDG_CONFIG_HOME"/.x11/.xinitrc
-#export ZDOTDIR="$HOME"/.config/zsh
+export ZDOTDIR="$HOME"/.config/zsh
 #export HISTFILE="$XDG_CONFIG_HOME"/zsh/.zsh_history
 export GTK2_RC_FILES="$HOME"/.config/gtk-2.0/gtkrc-2.0
 
