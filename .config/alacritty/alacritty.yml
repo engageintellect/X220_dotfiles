@@ -5,13 +5,9 @@
 # \__,_|_|\__,_|\___|_|  |_|\__|\__|\__, |  \___\___/|_| |_|_| |_|\__, |
 ####################################|___/#########################|___/
 
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use 'alacritty' if it is
-  # available, otherwise 'xterm-256color' is used.
-  #  TERM: xterm-256color
+
+
+TERM: xterm-256color
 
 window:
   dimensions:
@@ -22,7 +18,7 @@ window:
     x: 20
     y: 20
 
-  dynamic_padding: false
+  dynamic_padding: true
 
   decorations: full
 
@@ -32,7 +28,6 @@ scrolling:
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
   multiplier: 3
-
 
 
 font:
@@ -52,7 +47,7 @@ font:
     style: Italic
 
   # Point size
-  size: 9
+  size: 10
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -74,8 +69,8 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '#000000'
-    foreground: '#ffffff'
+    # background: '#000000'
+    # foreground: '#ffffff'
 
     # Bright and dim foreground colors
     #

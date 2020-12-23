@@ -86,8 +86,6 @@ super + s
     surf -N -z 1.0 https://web.tabliss.io/ 
 super + i
     bspc desktop -f '^3' && qutebrowser
-super + f
-    firefox
 super + c
     chromium
 

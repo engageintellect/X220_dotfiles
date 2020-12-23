@@ -40,7 +40,7 @@ bspc monitor LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '�
 
 # EXTERNAL DISPLAYS
 bspc monitor DisplayPort-1 -d   
-bspc monitor VGA1 -d                  
+bspc monitor VGA1 -d                  
 
 
 #===[ WINDOW SETTINGS ]===#

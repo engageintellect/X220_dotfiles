@@ -26,8 +26,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/home/r3dux/.oh-my-zsh"
 
 #===[ THEME ]===#
-#ZSH_THEME="random"
-ZSH_THEME="nanotech"
+# ZSH_THEME="random"
+ZSH_THEME="agnoster"
+# ZSH_THEME="nanotech"
 #ZSH_THEME="gallois"
 #ZSH_THEME="theunraveler"
 #ZSH_THEME="wedisagree"
@@ -40,7 +41,6 @@ ZSH_THEME="nanotech"
 #ZSH_THEME="fox"
 #ZSH_THEME="josh"
 #ZSH_THEME="aussiegeek"
-#ZSH_THEME="agnoster"
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="afowler"
 
