@@ -1,0 +1,844 @@
+2020-11-04 00:47:52	-->	r3dux (~r3dux@2600:8802:1800:537:a11:96ff:fe7c:5c18) has joined #archlinux
+2020-11-04 00:47:52	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org"
+2020-11-04 00:47:52	--	Topic set by jelle (~weechat@archlinux/developer/jelle) on Mon, 12 Oct 2020 09:16:36
+2020-11-04 00:47:52	--	Channel #archlinux: 1796 nicks (3 ops, 0 voices, 1793 normals)
+2020-11-04 00:47:53	<--	cgundersson (~christian@87.251.200.82) has quit (Ping timeout: 260 seconds)
+2020-11-04 00:47:55	--	Channel created on Sat, 14 Feb 2004 21:08:31
+2020-11-04 00:49:28	<--	fukawi2 (~quassel@archlinux/support/fukawi2) has quit (Ping timeout: 260 seconds)
+2020-11-04 00:51:34	-->	Phryq (~Phryq@unaffiliated/phryq) has joined #archlinux
+2020-11-04 00:51:59	Repentinus	!give Nemesis notarch
+2020-11-04 00:52:00	phrik	Nemesis: This channel is for Arch Linux support only. Also see https://wiki.archlinux.org/index.php/Code_of_conduct#Arch_Linux_distribution_support_ONLY
+2020-11-04 00:52:17	<--	pfg_ (~pfg_@c-73-222-221-147.hsd1.ca.comcast.net) has quit (Quit: Leaving)
+2020-12-06 00:05:56	-->	r3dux (~r3dux@2600:8802:1800:1d56:a11:96ff:fe7c:5c18) has joined #archlinux
+2020-12-06 00:05:56	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org"
+2020-12-06 00:05:56	--	Topic set by jelle (~weechat@archlinux/developer/jelle) on Mon, 12 Oct 2020 09:16:36
+2020-12-06 00:05:56	--	Channel #archlinux: 1743 nicks (2 ops, 0 voices, 1741 normals)
+2020-12-06 00:05:58	--	Channel created on Sat, 14 Feb 2004 21:08:31
+2020-12-06 00:06:29	-->	SanskritFritz (~quassel@2E8B45C2.catv.pool.telekom.hu) has joined #archlinux
+2020-12-06 00:06:41	-->	mattfly (~matheus@179-189-85-66.goldnettelecom.com.br) has joined #archlinux
+2020-12-06 00:06:54	-->	eoli3n (~eoli3n@lfbn-mon-1-1152-138.w90-48.abo.wanadoo.fr) has joined #archlinux
+2020-12-06 00:07:54	-->	GrayShade (~quassel@unaffiliated/grayshade) has joined #archlinux
+2020-12-06 00:08:28	<--	hussam (uid193284@gateway/web/irccloud.com/x-mfibzkwmkyxbbmao) has quit
+2020-12-06 00:09:39	-->	estebanlm (~estebanlm@88.122.170.151) has joined #archlinux
+2020-12-06 00:10:01	<--	estebanlm (~estebanlm@88.122.170.151) has quit (Read error: Connection reset by peer)
+2020-12-06 00:10:12	-->	estebanlm (~estebanlm@88.122.170.151) has joined #archlinux
+2020-12-06 00:10:41	<--	GrayShade (~quassel@unaffiliated/grayshade) has quit (Client Quit)
+2020-12-06 00:12:00	<--	vuoto (~vuoto@customer-212-237-101-103.ip4.gigabit.dk) has quit (Quit: WeeChat 2.9-dev)
+2020-12-06 00:12:43	-->	GrayShade (~quassel@unaffiliated/grayshade) has joined #archlinux
+2020-12-06 00:14:50	<--	wz1000 (~wz1000@static.11.113.47.78.clients.your-server.de) has quit (Ping timeout: 256 seconds)
+2020-12-06 00:15:41	-->	jissay (~jc@2a01:e0a:353:2ed0:e641:758a:a121:6b93) has joined #archlinux
+2020-12-06 00:16:01	-->	feriman (~feriman@188.163.113.127) has joined #archlinux
+2020-12-06 00:17:22	<--	|0-0| (~rol@30.75.27.93.rev.sfr.net) has quit (Ping timeout: 246 seconds)
+2020-12-06 00:20:08	-->	dude187 (~chris@d149-67-46-78.try.wideopenwest.com) has joined #archlinux
+2020-12-06 00:20:56	-->	darutoko (~darutoko@86.56.125.92.etth.tomsknet.ru) has joined #archlinux
+2020-12-06 00:22:26	-->	wz1000 (~wz1000@static.11.113.47.78.clients.your-server.de) has joined #archlinux
+2020-12-06 00:26:41	<--	amom (~anjan@fsf/member/amom) has quit (Quit: ZNC 1.8.1 - https://znc.in)
+2020-12-06 00:30:39	-->	amom (~anjan@fsf/member/amom) has joined #archlinux
+2020-12-06 00:30:51	<--	override (~override@mobile-107-77-164-126.mobile.att.net) has quit (Quit: Leaving)
+2020-12-06 00:31:48	-->	tchan (~tchan@lunar-linux/developer/tchan) has joined #archlinux
+2020-12-06 00:32:50	<--	amom (~anjan@fsf/member/amom) has quit (Client Quit)
+2020-12-06 00:33:01	-->	albatr0ss (~sahej@103.208.70.126) has joined #archlinux
+2020-12-06 00:34:41	<--	Betal (~Betal@unaffiliated/betal) has quit (Quit: WeeChat 2.9)
+2020-12-06 00:34:49	-->	amom (~anjan@fsf/member/amom) has joined #archlinux
+2020-12-06 00:35:05	<--	gzj (~gzj@unaffiliated/gzj) has quit (Remote host closed the connection)
+2020-12-06 00:35:26	-->	gzj (~gzj@unaffiliated/gzj) has joined #archlinux
+2020-12-06 00:37:05	-->	|0-0| (~rol@30.75.27.93.rev.sfr.net) has joined #archlinux
+2020-12-06 00:37:35	<--	leogallego (~leogalleg@146-16-245-190.fibertel.com.ar) has quit (Ping timeout: 272 seconds)
+2020-12-06 00:37:40	-->	damentz (~damentz@cpe-70-122-5-111.austin.res.rr.com) has joined #archlinux
+2020-12-06 00:39:15	-->	fncapkle (~sb35@184.75.215.8) has joined #archlinux
+2020-12-06 00:39:19	<--	|0-0| (~rol@30.75.27.93.rev.sfr.net) has left #archlinux
+2020-12-06 00:39:43	-->	xoan4 (~xoan@unaffiliated/xoan) has joined #archlinux
+2020-12-06 00:41:01	<--	tchan (~tchan@lunar-linux/developer/tchan) has quit (Ping timeout: 264 seconds)
+2020-12-06 00:41:09	<--	cim209 (~cim209@205.185.117.110) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-12-06 00:41:44	<--	xoan (~xoan@unaffiliated/xoan) has quit (Ping timeout: 240 seconds)
+2020-12-06 00:41:44	--	xoan4 is now known as xoan
+2020-12-06 00:41:49	-->	cim209 (~cim209@205.185.117.110) has joined #archlinux
+2020-12-06 00:43:01	-->	audiopath (~audiopath@2a02:8388:6a81:f180:60e6:1a21:741e:a86c) has joined #archlinux
+2020-12-06 00:43:43	<--	chaky (~chaky@gateway/tor-sasl/chaky) has quit (Ping timeout: 240 seconds)
+2020-12-06 00:43:46	-->	fyrgebraec (~enceladus@128-78-140-174.abo.bbox.fr) has joined #archlinux
+2020-12-06 00:50:11	-->	michall (~michall@ip-109-196-247-164.static.system77.pl) has joined #archlinux
+2020-12-06 00:50:24	-->	desmu (~desmu@ip-37-201-132-81.hsi13.unitymediagroup.de) has joined #archlinux
+2020-12-06 00:50:25	<--	edlou (uid413273@gateway/web/irccloud.com/x-zlkijtcnnokneqvg) has quit (Quit: Connection closed for inactivity)
+2020-12-06 00:50:57	-->	panikovsky (~panikovsk@31.23.155.88) has joined #archlinux
+2020-12-06 00:51:11	-->	tchan (~tchan@lunar-linux/developer/tchan) has joined #archlinux
+2020-12-06 00:52:11	-->	orivej (~orivej@193.27.14.10) has joined #archlinux
+2020-12-06 00:53:43	<--	beelz3buzz (~rasputin@gateway/tor-sasl/beelzebuzz) has quit (Ping timeout: 240 seconds)
+2020-12-06 00:55:26	<--	michall (~michall@ip-109-196-247-164.static.system77.pl) has quit (Ping timeout: 272 seconds)
+2020-12-06 00:55:32	<--	hke (~hke@ns3026993.ip-5-135-162.eu) has quit (Read error: Connection reset by peer)
+2020-12-06 00:57:01	-->	tyjak (~tyjak@59.48.132.77.rev.sfr.net) has joined #archlinux
+2020-12-06 00:57:08	-->	hke (~hke@ns3026993.ip-5-135-162.eu) has joined #archlinux
+2020-12-06 00:57:11	-->	chaky (~chaky@gateway/tor-sasl/chaky) has joined #archlinux
+2020-12-06 00:57:46	-->	ramses (~ramses@nat-35.starnet.cz) has joined #archlinux
+2020-12-06 00:58:38	-->	p6fr (~p3fr@dslb-092-078-115-116.092.078.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:00:27	-->	p4fr (~p3fr@dslb-092-078-119-122.092.078.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:00:39	-->	sa02irc (~mbax@155-079-043-212.ip-addr.inexio.net) has joined #archlinux
+2020-12-06 01:01:16	<--	p5fr (~p3fr@dslb-092-078-226-218.092.078.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:02:37	<--	camfl (~camfl@135-23-191-70.cpe.pppoe.ca) has quit (Read error: Connection reset by peer)
+2020-12-06 01:03:00	<--	p6fr (~p3fr@dslb-092-078-115-116.092.078.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2020-12-06 01:03:17	<--	palooka-jock (~mike@45.126.44.146) has quit (Quit: WeeChat 1.9.1)
+2020-12-06 01:03:45	<--	tchan (~tchan@lunar-linux/developer/tchan) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:05:33	-->	camfl (~camfl@135-23-191-70.cpe.pppoe.ca) has joined #archlinux
+2020-12-06 01:06:04	-->	murray (~murray@dyndsl-092-252-050-102.ewe-ip-backbone.de) has joined #archlinux
+2020-12-06 01:06:06	-->	tchan (~tchan@lunar-linux/developer/tchan) has joined #archlinux
+2020-12-06 01:06:43	<--	jissay (~jc@2a01:e0a:353:2ed0:e641:758a:a121:6b93) has quit (Ping timeout: 272 seconds)
+2020-12-06 01:07:05	<--	mattfly (~matheus@179-189-85-66.goldnettelecom.com.br) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:08:01	<--	p4fr (~p3fr@dslb-092-078-119-122.092.078.pools.vodafone-ip.de) has quit (Ping timeout: 264 seconds)
+2020-12-06 01:08:49	-->	p4fr (~p3fr@dslb-092-078-117-145.092.078.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:08:54	-->	Szadek_ (Szadek@gateway/vpn/mullvad/szadek) has joined #archlinux
+2020-12-06 01:09:06	-->	ABHIRAMSHIBU (~ABHIRAMSH@103.199.161.166) has joined #archlinux
+2020-12-06 01:10:39	ABHIRAMSHIBU	Anyone know how to fix NVIDIA: Failed to load module "glxserver_nvidia" (module does not exist, 0). I have both nvidia and intel gpu enabled. Nvidia GPU is used to get output. Cinnamon showing "Check your video drivers" message
+2020-12-06 01:11:03	<--	KeiraT (~k4ra@gateway/tor-sasl/k4ra) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:11:09	<--	tchan (~tchan@lunar-linux/developer/tchan) has quit (Ping timeout: 272 seconds)
+2020-12-06 01:11:43	<--	mimiku (~mimiku@gateway/tor-sasl/mimiku) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:14:32	-->	earnestly (~earnestly@unaffiliated/earnestly) has joined #archlinux
+2020-12-06 01:15:02	-->	gloomy_desktop (~ldorigo@81.161.149.37) has joined #archlinux
+2020-12-06 01:15:05	-->	p5fr (~p3fr@dslb-178-000-167-242.178.000.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:16:01	-->	Alak (~Alak@unaffiliated/alakzadeh) has joined #archlinux
+2020-12-06 01:16:09	<--	p4fr (~p3fr@dslb-092-078-117-145.092.078.pools.vodafone-ip.de) has quit (Ping timeout: 260 seconds)
+2020-12-06 01:16:10	<--	ABHIRAMSHIBU (~ABHIRAMSH@103.199.161.166) has quit (Remote host closed the connection)
+2020-12-06 01:16:57	-->	Darkmatter66 (~Darkmatte@37.237.208.10) has joined #archlinux
+2020-12-06 01:16:57	<--	tuxflux (~tuxflux@180.51-175-248.customer.lyse.net) has quit (Remote host closed the connection)
+2020-12-06 01:17:39	<--	zaszi (~zaszi@unaffiliated/zaszi) has quit (Read error: Connection reset by peer)
+2020-12-06 01:17:45	<--	Alak (~Alak@unaffiliated/alakzadeh) has quit (Client Quit)
+2020-12-06 01:17:58	<--	locrian9_ (~mike@99-153-255-194.lightspeed.irvnca.sbcglobal.net) has quit (Quit: Lost terminal)
+2020-12-06 01:18:07	-->	zaszi (~zaszi@unaffiliated/zaszi) has joined #archlinux
+2020-12-06 01:18:26	-->	Alak (~Alak@unaffiliated/alakzadeh) has joined #archlinux
+2020-12-06 01:18:59	<--	locrian9 (~mike@99-153-255-194.lightspeed.irvnca.sbcglobal.net) has quit (Quit: leaving)
+2020-12-06 01:19:30	<--	p5fr (~p3fr@dslb-178-000-167-242.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2020-12-06 01:19:35	-->	p6fr (~p3fr@dslb-178-005-017-230.178.005.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:19:44	-->	tchan (~tchan@lunar-linux/developer/tchan) has joined #archlinux
+2020-12-06 01:20:08	<--	guardian (~guardian@planet-d.net) has quit (Remote host closed the connection)
+2020-12-06 01:22:10	-->	chozen_ (~chozen@209.159.234.75) has joined #archlinux
+2020-12-06 01:22:22	-->	nopathtoaudio (~audiopath@80-110-100-109.cgn.dynamic.surfer.at) has joined #archlinux
+2020-12-06 01:23:16	<--	albatr0ss (~sahej@103.208.70.126) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:24:12	<--	Szadek_ (Szadek@gateway/vpn/mullvad/szadek) has quit (Ping timeout: 256 seconds)
+2020-12-06 01:24:16	<--	chozen (~chozen@209.159.234.75) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:24:27	<--	audiopath (~audiopath@2a02:8388:6a81:f180:60e6:1a21:741e:a86c) has quit (Ping timeout: 272 seconds)
+2020-12-06 01:25:05	-->	p4fr (~p3fr@dslb-188-100-109-016.188.100.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:25:23	-->	Volgaar (~volgaar@104.66.13.93.rev.sfr.net) has joined #archlinux
+2020-12-06 01:25:32	-->	GWM (~GWM@unaffiliated/gwm) has joined #archlinux
+2020-12-06 01:26:25	<--	gzj (~gzj@unaffiliated/gzj) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:27:26	<--	tchan (~tchan@lunar-linux/developer/tchan) has quit (Ping timeout: 256 seconds)
+2020-12-06 01:27:36	<--	twelveeighty (~twelveeig@unaffiliated/twelveeighty) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:27:43	<--	apus (~apus@gateway/tor-sasl/apus) has quit (Remote host closed the connection)
+2020-12-06 01:28:01	-->	twelveeighty (~twelveeig@unaffiliated/twelveeighty) has joined #archlinux
+2020-12-06 01:28:22	<--	p6fr (~p3fr@dslb-178-005-017-230.178.005.pools.vodafone-ip.de) has quit (Ping timeout: 272 seconds)
+2020-12-06 01:28:58	-->	apus (~apus@gateway/tor-sasl/apus) has joined #archlinux
+2020-12-06 01:29:25	<--	fyrgebraec (~enceladus@128-78-140-174.abo.bbox.fr) has quit (Quit: Bye!)
+2020-12-06 01:29:37	<--	Lord_of_Life (~Lord@46.217.217.114) has quit (Changing host)
+2020-12-06 01:29:37	-->	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux
+2020-12-06 01:30:20	<--	p4fr (~p3fr@dslb-188-100-109-016.188.100.pools.vodafone-ip.de) has quit (Ping timeout: 260 seconds)
+2020-12-06 01:30:26	-->	fyrgebraec (~enceladus@sp137-h04-128-78-140-174.dsl.sta.abo.bbox.fr) has joined #archlinux
+2020-12-06 01:31:02	-->	emberquill (~emberquil@162.245.221.142) has joined #archlinux
+2020-12-06 01:31:48	<--	estebanlm (~estebanlm@88.122.170.151) has quit (Quit: estebanlm)
+2020-12-06 01:31:49	-->	p4fr (~p3fr@dslb-188-103-056-254.188.103.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:32:55	-->	estebanlm (~estebanlm@88.122.170.151) has joined #archlinux
+2020-12-06 01:33:36	-->	jissay (~jc@2a01:e0a:353:2ed0:e641:758a:a121:6b93) has joined #archlinux
+2020-12-06 01:34:53	reactormonk	Is there an english language browser setting where toLocaleTimeString() uses the 24h format?
+2020-12-06 01:34:56	<--	DVS[1] (~r3-s0urce@bzq-84-110-103-67.cablep.bezeqint.net) has quit (Quit: leaving)
+2020-12-06 01:35:01	<--	fyrgebraec (~enceladus@sp137-h04-128-78-140-174.dsl.sta.abo.bbox.fr) has quit (Ping timeout: 264 seconds)
+2020-12-06 01:36:13	-->	mbomba (~mbomba@bras-base-toroon2719w-grc-49-142-114-9-241.dsl.bell.ca) has joined #archlinux
+2020-12-06 01:36:26	<--	horseface (~horseface@unaffiliated/horseface) has quit (Quit: Leaving)
+2020-12-06 01:36:38	-->	unluckyshrubbery (~unluckysh@unaffiliated/unluckyshrubbery) has joined #archlinux
+2020-12-06 01:37:16	<--	estebanlm (~estebanlm@88.122.170.151) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:38:36	<--	emberquill (~emberquil@162.245.221.142) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2020-12-06 01:40:47	-->	fyrgebraec (~enceladus@128-78-140-174.abo.bbox.fr) has joined #archlinux
+2020-12-06 01:41:33	-->	ctrlX (~ctrlX@193-187-91-107.pool.ovpn.com) has joined #archlinux
+2020-12-06 01:41:46	<--	Darkmatter66 (~Darkmatte@37.237.208.10) has quit (Ping timeout: 256 seconds)
+2020-12-06 01:42:02	-->	horseface (~horseface@unaffiliated/horseface) has joined #archlinux
+2020-12-06 01:42:28	-->	Carbon_Monoxide (~Carbon_Mo@2a02:8109:9cc0:1471:2798:be54:ea3b:71b0) has joined #archlinux
+2020-12-06 01:43:36	-->	skyscater (~skyscater@194-166-188-8.adsl.highway.telekom.at) has joined #archlinux
+2020-12-06 01:44:44	<--	xoan (~xoan@unaffiliated/xoan) has quit (Quit: Leaving...)
+2020-12-06 01:45:05	<--	ctrlX1981 (~ctrlX@185-86-106-151.pool.ovpn.com) has quit (Ping timeout: 240 seconds)
+2020-12-06 01:45:46	-->	xoan (~xoan@unaffiliated/xoan) has joined #archlinux
+2020-12-06 01:45:50	<--	abhixec (~abhixec@c-67-169-141-95.hsd1.ca.comcast.net) has quit (Ping timeout: 244 seconds)
+2020-12-06 01:46:34	<--	manti7 (~manti7@176.10.104.94) has quit (Quit: WeeChat 2.8)
+2020-12-06 01:46:59	-->	darkelectron (~Joey_Smit@41.84.236.17) has joined #archlinux
+2020-12-06 01:49:09	<--	jirido (~jirido@217.64.127.195) has quit (Ping timeout: 272 seconds)
+2020-12-06 01:49:13	-->	emberquill (~emberquil@162.245.221.142) has joined #archlinux
+2020-12-06 01:49:28	<--	p4fr (~p3fr@dslb-188-103-056-254.188.103.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2020-12-06 01:50:10	<--	downtrip (~downtrip@188.166.151.198) has quit (Quit: WeeChat 3.0)
+2020-12-06 01:50:15	-->	lakrass (~lakrass@5.18.164.94) has joined #archlinux
+2020-12-06 01:50:29	-->	polve (~polve@62-11-204-59.dialup.tiscali.it) has joined #archlinux
+2020-12-06 01:51:49	-->	FMC (~FMC@31.4.243.88) has joined #archlinux
+2020-12-06 01:52:08	<--	hnOsmium0001 (uid453710@gateway/web/irccloud.com/x-bjtotidkjwptzxld) has quit (Quit: Connection closed for inactivity)
+2020-12-06 01:53:23	-->	p4fr (~p3fr@dslb-188-100-109-248.188.100.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 01:53:28	-->	downtrip (~downtrip@188.166.151.198) has joined #archlinux
+2020-12-06 01:54:02	-->	Darkmatter66 (~Darkmatte@37.237.208.10) has joined #archlinux
+2020-12-06 01:54:03	<--	Nekit1234007 (~Nekit1234@134.0.102.59) has quit (Quit: The Lounge - https://thelounge.github.io)
+2020-12-06 01:54:26	-->	peerlessBug (~peerlessB@103.83.69.155) has joined #archlinux
+2020-12-06 01:54:37	-->	RapidRotator (~diederick@trillian.diederickdevries.net) has joined #archlinux
+2020-12-06 01:54:41	-->	demaio (~homer@ip-178-201-216-131.hsi08.unitymediagroup.de) has joined #archlinux
+2020-12-06 01:55:29	peerlessBug	today my wifi adapter vanished i hope it will come back on restart
+2020-12-06 01:55:43	NetSysFire	!itcrowd
+2020-12-06 01:55:44	phrik	Have you tried turning it off and on again?
+2020-12-06 01:56:04	peerlessBug	its not visible in ip link
+2020-12-06 01:56:13	<--	fyrgebraec (~enceladus@128-78-140-174.abo.bbox.fr) has quit (Quit: Bye!)
+2020-12-06 01:56:27	NetSysFire	!kernelcheck
+2020-12-06 01:56:28	phrik	compare the kernel versions shown in `uname -r` and `pacman -Q linux` and `file /boot/vmlinuz-linux`
+2020-12-06 01:56:32	NetSysFire	if one of them differs, reboot
+2020-12-06 01:57:10	-->	fyrgebraec (~enceladus@128-78-140-174.abo.bbox.fr) has joined #archlinux
+2020-12-06 01:58:00	-->	pankaj (~pankaj@45.248.1.71) has joined #archlinux
+2020-12-06 01:58:32	-->	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has joined #archlinux
+2020-12-06 01:58:35	pankaj	Can anybody tell how to fix my Hardware clock with any simple command?
+2020-12-06 01:58:52	<--	bintrl (~bintrl@182.69.102.165) has quit (Read error: Connection reset by peer)
+2020-12-06 01:59:08	-->	bintrl (~bintrl@182.69.102.165) has joined #archlinux
+2020-12-06 01:59:20	NetSysFire	did you search the wiki yet?
+2020-12-06 02:00:25	pankaj	NetSysFire: Yes
+2020-12-06 02:00:31	NetSysFire	what did you find?
+2020-12-06 02:00:52	pankaj	NetSysFire: 'hwclock', 'systemd-timesyncd' etc. still not working for me
+2020-12-06 02:00:56	<--	nopathtoaudio (~audiopath@80-110-100-109.cgn.dynamic.surfer.at) has quit (Ping timeout: 240 seconds)
+2020-12-06 02:00:56	NetSysFire	!doesntwork
+2020-12-06 02:00:58	phrik	What do you mean it doesn't work? If there's an error, *tell us*. If it's more than two lines, see !paste.
+2020-12-06 02:02:01	pankaj	NetSysFire: It does give any error. I type the commands and it just says nothing (which means that it worked) but then checking again with 'sudo timedatectl'; Local time and RTC time are both different and wrong.
+2020-12-06 02:02:03	-->	p5fr (~p3fr@dslb-088-075-120-058.088.075.pools.vodafone-ip.de) has joined #archlinux
+2020-12-06 02:02:20	NetSysFire	did you try set-ntp true yet
+2020-12-06 02:02:49	<--	fyrgebraec (~enceladus@128-78-140-174.abo.bbox.fr) has quit (Ping timeout: 260 seconds)
+2020-12-06 02:04:47	<--	p4fr (~p3fr@dslb-188-100-109-248.188.100.pools.vodafone-ip.de) has quit (Ping timeout: 265 seconds)
+2020-12-06 02:05:15	pankaj	NetSysFire: Is there no other simple command by the help of which I can set my hardware clock?
+2020-12-06 02:05:44	NetSysFire	did you read the whole page?
+2020-12-06 02:06:35	pankaj	NetSysFire: Let me try once again.
+2020-12-19 03:50:54	-->	r3dux (~r3dux@2600:8802:1809:4d00:a11:96ff:fe7c:5c18) has joined #archlinux
+2020-12-19 03:50:54	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org"
+2020-12-19 03:50:54	--	Topic set by jelle (~weechat@archlinux/developer/jelle) on Mon, 12 Oct 2020 09:16:36
+2020-12-19 03:50:55	--	Channel #archlinux: 1774 nicks (1 op, 0 voices, 1773 normals)
+2020-12-19 03:50:56	--	Channel created on Sat, 14 Feb 2004 21:08:31
+2020-12-19 03:51:45	reactormonk	I'm getting grub-install error: failed to get canonical path of `/dev/ata-Samsung_....-part3'. The missing by-id part is what's puzzling me. I'm currently inside an arch-chroot
+2020-12-19 03:52:44	-->	LogicalApex (~LogicalAp@pool-96-227-243-251.phlapa.fios.verizon.net) has joined #archlinux
+2020-12-19 03:52:45	-->	cypa (~quassel@5.79.149.28) has joined #archlinux
+2020-12-19 03:53:26	-->	gareppa (~gareppa@unaffiliated/gareppa) has joined #archlinux
+2020-12-19 03:54:08	r3dux	reactormonk: sounds like something went wrong with your fstab.
+2020-12-19 03:54:35	reactormonk	the entires there are by UUID
+2020-12-19 03:55:31	-->	SupaYoshi (~supayoshi@213-10-140-13.fixed.kpn.net) has joined #archlinux
+2020-12-19 03:56:15	r3dux	in that case im guessing it sounds like it doesnt like the ata-Samsung label.
+2020-12-19 03:56:17	<--	ransome (~quassel@2a01:c22:344d:9e00:a445:5af2:458b:4c8f) has quit (Ping timeout: 260 seconds)
+2020-12-19 03:56:36	r3dux	I have never had that issue and always just use something like '/dev/sda1'
+2020-12-19 03:57:14	-->	libburda (~libburda@193.165.237.204) has joined #archlinux
+2020-12-19 03:57:29	reactormonk	I don't know what where that path comes from though
+2020-12-19 03:57:32	reactormonk	... which is kinda weird
+2020-12-19 03:58:01	-->	dvx (~dvx@185.63.97.64) has joined #archlinux
+2020-12-19 03:58:04	r3dux	what does the outout of 'lsblk' look like?
+2020-12-19 03:58:23	<--	gareppa (~gareppa@unaffiliated/gareppa) has quit (Remote host closed the connection)
+2020-12-19 03:58:30	r3dux	and 'sudo fdisk -l'
+2020-12-19 03:59:22	reactormonk	How do I ask lsblk for the ids?
+2020-12-19 03:59:32	-->	gffa (~unknown@unaffiliated/gffa) has joined #archlinux
+2020-12-19 04:00:37	r3dux	'lsblk -f'
+2020-12-19 04:00:42	-->	ville (~ville@212-149-214-47.bb.dnainternet.fi) has joined #archlinux
+2020-12-19 04:01:24	r3dux	that'll give you the partition label, fs type, uuid, and other info..
+2020-12-19 04:02:24	-->	mrbanie (~mrbanie@unaffiliated/mrbanie) has joined #archlinux
+2020-12-19 04:02:44	reactormonk	label is on there, uuid as well, things look fine
+2020-12-19 04:03:03	-->	jukeboh (~noname@wikipedia/jukeboksi) has joined #archlinux
+2020-12-19 04:03:05	ville	i'd like to whenever a new keyboard is detected make sure it has specific xmodmap settings applied. is there still a timing issue with udev events and device creation(?) or has that been fixed in recent years?
+2020-12-19 04:03:30	r3dux	reactormonk: so in the output of 'lsblk', under 
+2020-12-19 04:03:44	r3dux	NAME, it says dev/ata-Samsung?
+2020-12-19 04:03:55	-->	Shoe (uid40690@gateway/web/irccloud.com/x-xkldzuhydviuufjm) has joined #archlinux
+2020-12-19 04:04:01	Scimmia	mount could also be helpful
+2020-12-19 04:04:06	reactormonk	Nope, all under sda and sdb
+2020-12-19 04:04:34	reactormonk	Nah, mount is also with /dev/sda1
+2020-12-19 04:04:58	r3dux	reactormonk: so, just to be clear. there is nothing in lsblk output that mentions ata-Samsung or whatever?
+2020-12-19 04:05:15	reactormonk	Wait, that partition is the zfs root.
+2020-12-19 04:05:51	<--	littleclover (~littleclo@60.54.38.231) has quit (Quit: leaving)
+2020-12-19 04:06:21	reactormonk	Ok, if I pass ZPOOL_VDEV_NAME_PATH=YES I'm on error: unknown filesystem
+2020-12-19 04:06:26	<--	portalrat (~muskrat@trivialand/player/muskrat) has quit (Ping timeout: 268 seconds)
+2020-12-19 04:07:05	<--	Dko1905 (~Dko1905@185.91.253.18) has quit (Read error: Connection reset by peer)
+2020-12-19 04:07:20	Scimmia	does grub support zfs?
+2020-12-19 04:07:21	-->	Dko1905 (~Dko1905@185.91.253.18) has joined #archlinux
+2020-12-19 04:07:58	r3dux	Scimmia: good question... I've only ever used MBP and GPT
+2020-12-19 04:08:03	-->	aryan (b9a6544e@unaffiliated/mercenary) has joined #archlinux
+2020-12-19 04:08:04	r3dux	MBR*
+2020-12-19 04:08:05	<--	swalladge_ (~swalladge@unaffiliated/swalladge) has quit (Ping timeout: 240 seconds)
+2020-12-19 04:08:05	aryan	Hi
+2020-12-19 04:08:09	luna_	hey
+2020-12-19 04:08:15	NetSysFire	!give aryan welcome
+2020-12-19 04:08:16	phrik	aryan: Welcome to #archlinux, tell us how you fucked up.
+2020-12-19 04:08:16	Scimmia	those are partition tables, not filesystems
+2020-12-19 04:08:33	aryan	my screen resolution is too big.
+2020-12-19 04:08:36	aryan	what should i do?
+2020-12-19 04:08:40	reactormonk	Scimmia, /boot is ext4, /efi is vfat, so grub shouldn't need it
+2020-12-19 04:08:46	r3dux	sorry lol, im tired... ext4 :)
+2020-12-19 04:08:55	luna_	aryan: change it with xrandr/lxrandr?
+2020-12-19 04:09:18	reactormonk	Oh wait, I didn't mount /boot
+2020-12-19 04:09:20	<--	Dko1905 (~Dko1905@185.91.253.18) has quit (Client Quit)
+2020-12-19 04:09:56	aryan	luna_ not famliar with.
+2020-12-19 04:10:00	r3dux	reactormonk: that explains it
+2020-12-19 04:10:03	r3dux	lol
+2020-12-19 04:10:06	aryan	the windows are too big
+2020-12-19 04:11:33	-->	abarr (~aplsm@KD113148020047.ppp-bb.dion.ne.jp) has joined #archlinux
+2020-12-19 04:12:11	Khorne	thats what she said
+2020-12-19 04:12:22	<--	PapuaHardyNet (PapuaHardy@gateway/vpn/mullvad/papuahardynet) has quit (Ping timeout: 260 seconds)
+2020-12-19 04:12:58	r3dux	arayn: run "xrandr" and tell us what resolution has a "+" next to it.
+2020-12-19 04:13:18	<--	J_Darnley (~J_Darnley@d51A44418.access.telenet.be) has quit (Ping timeout: 256 seconds)
+2020-12-19 04:13:50	aryan	http://ix.io/2IGi
+2020-12-19 04:14:41	reactormonk	Ok, I'm on "Starting version 247.1-4-arch
+2020-12-19 04:14:55	aryan	what should i do
+2020-12-19 04:15:52	-->	J_Darnley (~J_Darnley@d51A44418.access.telenet.be) has joined #archlinux
+2020-12-19 04:16:08	<--	theorangeone (~quassel@host86-140-100-159.range86-140.btcentralplus.com) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-12-19 04:16:30	aminvakil	aryan: have you tried changing cable? that worked for me many times
+2020-12-19 04:16:40	-->	yans (~yans@unaffiliated/yinsen) has joined #archlinux
+2020-12-19 04:16:43	-->	wrobinso1 (~wrobinson@102.114.119.101) has joined #archlinux
+2020-12-19 04:17:03	-->	theorangeone (~quassel@host86-140-100-159.range86-140.btcentralplus.com) has joined #archlinux
+2020-12-19 04:17:19	<--	freebench (~freebench@92.253.250.131) has quit (Ping timeout: 260 seconds)
+2020-12-19 04:17:19	r3dux	aryan: is 1024x768 the only resolution in the output of xrandr?
+2020-12-19 04:18:07	aryan	no
+2020-12-19 04:18:11	aryan	http://ix.io/2IGk
+2020-12-19 04:18:16	aryan	heres the complete output
+2020-12-19 04:18:26	aryan	I want this
+2020-12-19 04:18:28	aryan	   1280x1024     85.02    60.02
+2020-12-19 04:18:57	-->	random-nick (~random-ni@unaffiliated/random-nick) has joined #archlinux
+2020-12-19 04:19:23	<--	wrobinson (~wrobinson@102.114.65.141) has quit (Ping timeout: 268 seconds)
+2020-12-19 04:19:25	r3dux	aryan: on HDMI-1?
+2020-12-19 04:19:51	aryan	actually It's converter
+2020-12-19 04:20:03	<--	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Ping timeout: 240 seconds)
+2020-12-19 04:20:08	aryan	with a hdmi converter at the other end of it.
+2020-12-19 04:20:17	r3dux	aryan: try 
+2020-12-19 04:20:39	-->	doublemetres (~lio@c-6fc9e655.022-327-73746f40.bbcust.telenor.se) has joined #archlinux
+2020-12-19 04:20:47	r3dux	xrandr --output HDMI-1 --mode 1280x1024 --rate 60
+2020-12-19 04:20:48	<--	doublemetres (~lio@c-6fc9e655.022-327-73746f40.bbcust.telenor.se) has quit (Client Quit)
+2020-12-19 04:21:11	aryan	worked out
+2020-12-19 04:21:12	aryan	thanks
+2020-12-19 04:21:22	-->	charlie5 (~rod@pa49-195-50-133.pa.nsw.optusnet.com.au) has joined #archlinux
+2020-12-19 04:22:02	r3dux	aryan: you're welcome
+2020-12-19 04:22:29	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #archlinux
+2020-12-19 04:22:31	charlie5	hi all ... would anyone happen to know which strip options are using during a makepkg when the strip option is enabled ?
+2020-12-19 04:22:33	<--	amirthehossein (~amir@46.62.168.185) has quit (Quit: WeeChat 2.9)
+2020-12-19 04:23:04	-->	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has joined #archlinux
+2020-12-19 04:24:33	batot	Maybe somebody know asnwer: example:  git config --global user.name "oberon@manjaro.org"
+2020-12-19 04:24:35	-->	Pickchea (~private@unaffiliated/pickchea) has joined #archlinux
+2020-12-19 04:24:35	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #archlinux
+2020-12-19 04:24:41	batot	user.name is my name or contributed?
+2020-12-19 04:24:50	captainchris	Hi everybody
+2020-12-19 04:24:54	Scimmia	"contributed" means nothing here
+2020-12-19 04:25:10	Scimmia	charlie5: /usr/share/makepkg/tidy/strip.sh
+2020-12-19 04:25:11	r3dux	batot: oberon
+2020-12-19 04:25:38	r3dux	batot: and user.email will be "oberon@manjaro.org"
+2020-12-19 04:25:54	pitust	are block adresses 32 bit on ext2?
+2020-12-19 04:25:57	aryan	r3dux is it permanent?
+2020-12-19 04:26:19	batot	r3boot user.name i must put contributed data yea?
+2020-12-19 04:26:22	charlie5	Scimmia: ah, perfect ... thanks !
+2020-12-19 04:26:36	luna_	r3dux: :D
+2020-12-19 04:26:38	r3dux	aryan: no, you will loose it on reboot unless you put it in a startup script or something
+2020-12-19 04:27:01	Scimmia	and we're back to "contributed"
+2020-12-19 04:28:01	Scimmia	batot: how did you install Arch?
+2020-12-19 04:28:10	r3dux	batot: yes... they are stored to "~/.gitconfig" you can edit them there or by running the command you mentioned... it will need both the user name and the email.
+2020-12-19 04:28:15	batot	Scimmia im expoert archlinux
+2020-12-19 04:28:16	luna_	no really batot you should type your name and email in your git config but you can't directly configure
+2020-12-19 04:28:26	batot	but never send to aur
+2020-12-19 04:28:39	Scimmia	batot: not by anyone's definition but yours
+2020-12-19 04:28:49	Scimmia	and that doesn't answer the question
+2020-12-19 04:28:51	luna_	Manjaro is not Arch
+2020-12-19 04:29:03	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #archlinux
+2020-12-19 04:29:05	r3dux	Manjaro is def not arch...
+2020-12-19 04:29:24	luna_	but i also use it on a laptop so i should not say anything :(
+2020-12-19 04:29:45	NetSysFire	!manjaro
+2020-12-19 04:29:46	phrik	manjaro does things differently from arch, so we can't really support it. ask in #manjaro or ##linux
+2020-12-19 04:29:49	NetSysFire	!notarch
+2020-12-19 04:29:50	phrik	This channel is for Arch Linux support only. Also see https://wiki.archlinux.org/index.php/Code_of_conduct#Arch_Linux_distribution_support_ONLY
+2020-12-19 04:30:00	luna_	NetSysFire: we know
+2020-12-19 04:30:03	batot	r3boot omg answer me only that user.name i must put my data or contributed data.
+2020-12-19 04:30:35	Scimmia	batot: and for the 4th time, contributed data means nothing. It's complete nonsense in this context
+2020-12-19 04:30:41	r3dux	batot: you lost me.... I dont lknow what you're talking about.
+2020-12-19 04:30:55	luna_	batot: you should type your data, but you can't just directly commit
+2020-12-19 04:30:56	Scimmia	batot: that's like asking if you should put in your data or cottage cheese
+2020-12-19 04:31:06	batot	"example:  git config --global user.name "Contributed name""
+2020-12-19 04:31:08	luna_	so better write an updated PKGBUILD and pastebin and put it in the comments
+2020-12-19 04:31:15	luna_	and the maintainer can pick it up if its good enough
+2020-12-19 04:31:33	Scimmia	batot: you really can't read, can you?
+2020-12-19 04:31:46	batot	luna_ isn't more simple 
+2020-12-19 04:31:47	Namarrgon	is there no polish speaking arch channel?
+2020-12-19 04:31:53	r3dux	batot: dude, why would you think youre user name would be "Contributed name"
+2020-12-19 04:31:57	Namarrgon	we're having a really bad case of lost in translation
+2020-12-19 04:32:30	-->	ricus_ (~kiike@unaffiliated/ricus) has joined #archlinux
+2020-12-19 04:33:04	pitust	lol
+2020-12-19 04:33:14	<--	ricus (~kiike@unaffiliated/ricus) has quit (Ping timeout: 258 seconds)
+2020-12-19 04:33:15	r3dux	batot: 
+2020-12-19 04:33:17	pitust	nie wydaje mi sie
+2020-12-19 04:33:26	pitust	*i don' think so
+2020-12-19 04:33:48	NetSysFire	is this the birth of a channel?
+2020-12-19 04:34:19	r3dux	batot: "git config --global user.name obernon"
+2020-12-19 04:34:34	Scimmia	that's not their name, though
+2020-12-19 04:34:34	batot	example:  git config --global user.name "My name" - thanks
+2020-12-19 04:34:35	r3dux	batot: "git config --global user.email obernon@manjaro.org"
+2020-12-19 04:34:43	<--	chaky (~chaky@gateway/tor-sasl/chaky) has quit (Ping timeout: 240 seconds)
+2020-12-19 04:35:00	<--	hovr (~nobody@unaffiliated/randomio) has quit (Ping timeout: 256 seconds)
+2020-12-19 04:35:25	<--	albatr0ss (~sahej@103.208.70.90) has quit (Ping timeout: 246 seconds)
+2020-12-19 04:35:35	batot	r3dux yes and my email must put
+2020-12-19 04:35:51	<--	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has quit (Quit: WeeChat 3.0)
+2020-12-19 04:35:52	r3dux	correct, batot
+2020-12-19 04:36:14	batot	r3dux yes, it is simple but get complicated answer ;)
+2020-12-19 04:36:35	alad	Namarrgon: there is, #archlinux.org.pl
+2020-12-19 04:36:44	pitust	cool
+2020-12-19 04:36:57	pitust	with like 20 people
+2020-12-19 04:36:59	Namarrgon	yeah
+2020-12-19 04:37:16	r3dux	alad: ill remember to check that out next time im trying to get pissed off..
+2020-12-19 04:37:49	-->	portalrat (~muskrat@trivialand/player/muskrat) has joined #archlinux
+2020-12-19 04:37:59	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #archlinux
+2020-12-19 04:38:04	captainchris	Hi everybody 
+2020-12-19 04:38:05	-->	phonemic (~phonemic@104-60-219-66.lightspeed.nsvltn.sbcglobal.net) has joined #archlinux
+2020-12-19 04:38:21	NetSysFire	the pl channel should be added to the list of channels in the irc wiki page
+2020-12-19 04:38:24	r3dux	Ahoy, captain.
+2020-12-19 04:38:32	NetSysFire	unfortunately, only ops may edit the page
+2020-12-19 04:38:45	Namarrgon	it is listed there
+2020-12-19 04:39:02	alad	NetSysFire: that's where I got it from
+2020-12-19 04:39:11	captainchris	I need to change my framebuffer to config font. I see fbterm stop devellopment, do you have similar framebuffer.
+2020-12-19 04:39:14	NetSysFire	i think i just discovered that i am blind
+2020-12-19 04:39:36	captainchris	I try to change resolution in my grub.cfg but nothing change
+2020-12-19 04:39:47	<--	Darkmatter66 (~Darkmatte@37.237.208.9) has quit (Ping timeout: 260 seconds)
+2020-12-19 04:40:06	<--	xdeadbeef (~deadbeef@unaffiliated/xdeadbeef) has quit (Ping timeout: 256 seconds)
+2020-12-19 04:40:53	batot	r3dux have next problem. trying commit "git commit -m "FIX PKGBUILD" but get answer no changes added to commit (use "git add" and/or "git commit -a")
+2020-12-19 04:40:58	r3dux	captainchris: why not use xrandr?
+2020-12-19 04:41:24	-->	ubuntourist (~kjcole@unaffiliated/kjcole) has joined #archlinux
+2020-12-19 04:41:36	<--	ricus_ (~kiike@unaffiliated/ricus) has quit (Ping timeout: 240 seconds)
+2020-12-19 04:41:36	-->	xdeadbeef (~deadbeef@unaffiliated/xdeadbeef) has joined #archlinux
+2020-12-19 04:41:52	batot	r3dux " modified:   PKGBUILD"
+2020-12-19 04:42:01	r3dux	batot: you have to add a file to your repo first.... EXAMPLE: git add myfile.py && git commit -m 'initial commit' && git push origin master
+2020-12-19 04:42:03	luna_	batot: its not gonna work to commit directly anyways as your not the maintainer of the Openoffice AUR package
+2020-12-19 04:42:08	-->	miczac (~miczac@mobiledyn-185-69-244-222.mrsn.at) has joined #archlinux
+2020-12-19 04:42:13	captainchris	r3dux: xrandr is not working on framebuffer
+2020-12-19 04:42:16	mattrattus	batot: you from Poland? why you don't ask on polisharch chanel? nawet ja Ci tam pomogę ;)
+2020-12-19 04:42:21	Scimmia	batot: you never answered the question of how you installed Arch...
+2020-12-19 04:42:24	r3dux	luna: wait hes trying to commit to Open office?
+2020-12-19 04:42:35	captainchris	xrandr -q
+2020-12-19 04:42:35	batot	r3dux Not, only wont send fixed file to master branch
+2020-12-19 04:42:43	luna_	r3dux: yeah i think so we had a conversation in the #archlinux-aur channel
+2020-12-19 04:42:45	<--	aryan (b9a6544e@unaffiliated/mercenary) has quit (Remote host closed the connection)
+2020-12-19 04:42:58	captainchris	r3dux: can't open display 
+2020-12-19 04:43:06	-->	ricus_ (~kiike@unaffiliated/ricus) has joined #archlinux
+2020-12-19 04:43:17	r3dux	batot: if you're trying to commit to an existing project you need to send a pull request.
+2020-12-19 04:43:26	luna_	think he has good intentions but don't really know how things works
+2020-12-19 04:43:27	r3dux	captaincrhis: so you're in a tty?
+2020-12-19 04:43:30	batot	r3dux How do it ?
+2020-12-19 04:43:35	luna_	https://aur.archlinux.org/packages/openoffice
+2020-12-19 04:43:37	phrik	Title: AUR (en) - openoffice (at aur.archlinux.org)
+2020-12-19 04:43:45	captainchris	r3dux: yes
+2020-12-19 04:43:57	captainchris	and i woud like to reduce the font size
+2020-12-19 04:44:09	captainchris	I specified in grub.cfg but nothing change
+2020-12-19 04:44:24	batot	r3dux how send "pull request" ?
+2020-12-19 04:44:27	captainchris	the look is similar to 640x480
+2020-12-19 04:44:45	alad	r3dux: please, stop feeding him
+2020-12-19 04:44:53	alad	take it to a query if you must
+2020-12-19 04:44:55	r3dux	captain: did you try fbset?
+2020-12-19 04:46:30	batot	r3dux I dotn wont create other branch ( pull request) i wotn send only fixed file.
+2020-12-19 04:46:56	<--	charlie5 (~rod@pa49-195-50-133.pa.nsw.optusnet.com.au) has quit (Ping timeout: 240 seconds)
+2020-12-19 04:47:00	r3dux	captainchris: im guessing you did something like  GRUB_GFXMODE=1024x768x32 ?
+2020-12-19 04:47:02	batot	r3dux fixed fiel to master branch
+2020-12-19 04:47:08	<--	mrbanie (~mrbanie@unaffiliated/mrbanie) has quit (Ping timeout: 268 seconds)
+2020-12-19 04:47:26	r3dux	captainchris: in /etc/default/grub 
+2020-12-19 04:47:41	luna_	better to put it in a comment if its a fixed file that actually works 
+2020-12-19 04:47:52	luna_	also i think most people use Libreoffice instead of Openoffice nowadays
+2020-12-19 04:47:56	batot	luna_ i cant if trying get error
+2020-12-19 04:48:06	-->	chaky (~chaky@gateway/tor-sasl/chaky) has joined #archlinux
+2020-12-19 04:48:07	 *	luna_ gives up
+2020-12-19 04:48:11	r3dux	captainchris: and did you update grub after? or run "grub-mkconfig -o /boot/grub/grub.cf"
+2020-12-19 04:48:14	<--	miczac (~miczac@mobiledyn-185-69-244-222.mrsn.at) has quit (Ping timeout: 260 seconds)
+2020-12-19 04:48:21	batot	luna_: "On branch master"
+2020-12-19 04:48:33	batot	luna_: "no changes added to commit (use "git add" and/or "git commit -a")"
+2020-12-19 04:48:40	Namarrgon	batot: forget about git. post the modified PKGBUILD to a paste service and post a link to that in an AUR comment.
+2020-12-19 04:48:43	-->	miczac (~miczac@mobiledyn-185-69-244-185.mrsn.at) has joined #archlinux
+2020-12-19 04:49:16	Scimmia	Namarrgon: they can't grasp the concept of a paste service. Already tried in #archlinux-aur
+2020-12-19 04:50:02	batot	Namarrgon :-(  i think so that use fisth time commit in git
+2020-12-19 04:50:18	r3dux	whens the last time openoffice was updated anyways, I thought it was dead.
+2020-12-19 04:50:22	-->	orivej (orivej@gateway/vpn/mullvad/orivej) has joined #archlinux
+2020-12-19 04:50:28	<--	abarr (~aplsm@KD113148020047.ppp-bb.dion.ne.jp) has quit (Ping timeout: 246 seconds)
+2020-12-19 04:50:35	alad	20th of november
+2020-12-19 04:50:41	alad	"maintenance release"
+2020-12-19 04:50:56	Namarrgon	batot: you're lacking a lot of tha basics
+2020-12-19 04:51:02	ice9	what's new in GTK4 for end-users?
+2020-12-19 04:51:25	Namarrgon	it's better, obviously, because the number is higher
+2020-12-19 04:51:46	<--	eoli3n (~eoli3n@2a01:cb10:8361:a900:2216:b9ff:feb7:ada9) has quit (Remote host closed the connection)
+2020-12-19 04:52:02	r3dux	ice9: and its a looking more and more like osx.
+2020-12-19 04:52:06	Namarrgon	batot: learn how to use the git basics, it makes no sense to waste your time on the AUR before that
+2020-12-19 04:52:14	-->	eoli3n (~eoli3n@2a01:cb10:8361:a900:2216:b9ff:feb7:ada9) has joined #archlinux
+2020-12-19 04:52:14	-->	abarr (~aplsm@KD113148020047.ppp-bb.dion.ne.jp) has joined #archlinux
+2020-12-19 04:52:29	luna_	or atleast what and pastebin is and how it works
+2020-12-19 04:52:30	ice9	and when GTK4 will be released?
+2020-12-19 04:52:36	luna_	ice9: was released some days ago
+2020-12-19 04:52:43	luna_	Wednsday or Thursday this week
+2020-12-19 04:52:45	captainchris	r3dux: I have edit grub.cfg too and nothing change
+2020-12-19 04:52:49	luna_	if i remember correctly
+2020-12-19 04:52:56	alad	ice9: is there anything that uses gtk4 in the first place?
+2020-12-19 04:53:03	ice9	luna_, will it be integrated in Arch soon?
+2020-12-19 04:53:12	batot	r3dux "git commit --all" what wrote inside commited file?
+2020-12-19 04:53:15	alad	if there's nothing using it, there's 0 reason to add it
+2020-12-19 04:53:38	r3dux	captainchris... but did you run "grub-mkconfig -o /boot/grub/grub.cfg" after you did the edit?
+2020-12-19 04:53:40	-->	atrillox (~derp@219.137.140.51) has joined #archlinux
+2020-12-19 04:53:47	luna_	ice9: guessing in March 2021, when GNOME 40 is starting to using it
+2020-12-19 04:53:49	luna_	but thats just a guess
+2020-12-19 04:53:55	ayekat	r3dux: if you edit grub.cfg directly, there is no point in regenerating it
+2020-12-19 04:54:13	ayekat	grub-mkconfig generates grub.cfg from settings specified in /etc/default/grub and elsewhere
+2020-12-19 04:54:15	alad	the hidden art of writing grub.cfg files
+2020-12-19 04:54:16	alad	by hand
+2020-12-19 04:54:22	<--	atrillox (~derp@219.137.140.51) has quit (Max SendQ exceeded)
+2020-12-19 04:54:49	captainchris	alad: yes I prefer edit grub.cfg directly 
+2020-12-19 04:54:55	NetSysFire	!grub.cfg
+2020-12-19 04:54:57	phrik	Write your own: https://wiki.archlinux.org/index.php/User:Eschwartz/Grub#Write_the_configuration_from_scratch
+2020-12-19 04:55:32	batot	r3dux: [bartosz@Algrim2-BB openoffice]$ git commit -m "DFIX PKGBUILD"[master b76dbd4] DFIX PKGBUILD 1 file changed, 2 insertions(+), 2 deletions(-)
+2020-12-19 04:55:51	batot	r3dux it is all ?
+2020-12-19 04:56:03	ayekat	I believe this is the wrong place to ask about git basics :-/
+2020-12-19 04:56:05	HawkinsTheWizard	if you've ever had to go to grub terminal at start and type each command, its not that hard
+2020-12-19 04:56:09	ayekat	at least in such a vampiristic manner
+2020-12-19 04:56:10	r3dux	I never knew that, interesting. I've always done a grub-update even when editing grub.cfg. Nice to know I've been wasting my time :)
+2020-12-19 04:56:29	teraflops	…
+2020-12-19 04:56:33	alad	NetSysFire: still not merged :(
+2020-12-19 04:56:40	ayekat	grub-update...?
+2020-12-19 04:56:52	r3dux	update-grub
+2020-12-19 04:57:07	HawkinsTheWizard	unless grub version updates, theres no need for that, i think
+2020-12-19 04:58:06	HawkinsTheWizard	actually, dont touch grub if the system is booting fine, unless you are tweaking stuff.  btw. why are you still using grub?
+2020-12-19 04:58:06	ayekat	it's basically just a wrapper around grub-mkconfig... https://aur.archlinux.org/cgit/aur.git/tree/update-grub?h=update-grub
+2020-12-19 04:58:08	phrik	Title: update-grub - aur.git - AUR Package Repositories (at aur.archlinux.org)
+2020-12-19 04:58:30	ayekat	there's one preinstalled on other distros like debian
+2020-12-19 04:58:55	-->	mingzzx (~mingzzx@222.175.198.27) has joined #archlinux
+2020-12-19 04:58:59	HawkinsTheWizard	default archlinux uses systemd efi boot stub
+2020-12-19 04:59:04	alad	HawkinsTheWizard: there's no such thing
+2020-12-19 04:59:16	ayekat	"default archlinux" doesn't use any bootloader
+2020-12-19 04:59:16	Namarrgon	it's mindboggling that someone wrote a PKGBUILD for it
+2020-12-19 04:59:34	ayekat	also the `set -e` there  O_o
+2020-12-19 04:59:37	alad	:D
+2020-12-19 04:59:38	captainchris	NetSysFire: I will try videoinfo on the command line grub 
+2020-12-19 04:59:44	r3dux	ayekat: ya, i knew it was a wrapper... but i have had grub-mkconfig aliased in zsh for a while so ive just ran it out of habit... even after editing grub.cfg
+2020-12-19 04:59:45	<--	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has quit (Quit: WeeChat 3.0)
+2020-12-19 04:59:47	HawkinsTheWizard	okok
+2020-12-19 04:59:50	NetSysFire	tabfail?
+2020-12-19 05:00:09	--	SpinTronix_ is now known as SpinTronix
+2020-12-19 05:00:13	<--	SteveDeFacto (~SteveDeFa@172.58.22.222) has quit (Quit: WeeChat 2.9)
+2020-12-19 05:00:16	-->	PapuaHardyNet (PapuaHardy@gateway/vpn/mullvad/papuahardynet) has joined #archlinux
+2020-12-19 05:00:22	ayekat	r3dux: so essentially you always edited your grub.cfg and then reverted that... for fun? :-)
+2020-12-19 05:00:53	r3dux	ya, apparently :D lol
+2020-12-19 05:00:57	HawkinsTheWizard	I see now why people think we are mean
+2020-12-19 05:01:08	HawkinsTheWizard	they dont have a sense of humour
+2020-12-19 05:01:25	<--	polve (~polve@88.147.91.229) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:01:28	alad	:O
+2020-12-19 05:01:28	r3dux	what do you mean no bootloader? are you refering to systemd boot?
+2020-12-19 05:02:01	HawkinsTheWizard	no, by default archlinux has no bootloader, you choose what you want.
+2020-12-19 05:02:13	NetSysFire	there is no default
+2020-12-19 05:02:14	r3dux	HawkinsTheWizard: Imagine going anywhere else in life and being told to RTFM
+2020-12-19 05:02:23	alad	r3dux: well "default arch" doesn't even install a kernel, so no efistub :D
+2020-12-19 05:02:37	alad	if by default you understand "pacstrap base"
+2020-12-19 05:02:48	ayekat	default arch linux is only arch, no linux
+2020-12-19 05:02:57	alad	ha
+2020-12-19 05:03:09	HawkinsTheWizard	apparently people who sell insurance and stuff is amazed I have no clue on what finanses mean
+2020-12-19 05:03:29	-->	desmu (~desmu@ip-37-201-132-81.hsi13.unitymediagroup.de) has joined #archlinux
+2020-12-19 05:03:54	HawkinsTheWizard	just install arch hurd then
+2020-12-19 05:04:23	<--	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:04:25	<--	su__deep (~su__deep@182.69.192.205) has quit (Ping timeout: 264 seconds)
+2020-12-19 05:04:36	alad	or arch bsd (now pacbsd...)
+2020-12-19 05:04:37	-->	albatr0ss (~sahej@103.208.70.90) has joined #archlinux
+2020-12-19 05:04:54	r3dux	ayekat:so you're saying a can not use grub, or systemd boot on an arch desktop? cause that would be cool...one less thing, ya know
+2020-12-19 05:05:04	-->	su__deep (~su__deep@2401:4900:4153:6a10:3663:cfee:2124:870c) has joined #archlinux
+2020-12-19 05:05:06	HawkinsTheWizard	say the arch bsd thing. still want to try that .... because I love hurting myself
+2020-12-19 05:05:29	low-key	when launching programs by adding an exec line in sway's config file, do I need to add & at the end?
+2020-12-19 05:05:47	low-key	I remember doing that when using bspwm
+2020-12-19 05:05:55	r3dux	HawkinsTheWizard: have you played with nixos?
+2020-12-19 05:06:05	alad	r3dux: you can use the efistub with the kernel if it works for your setup
+2020-12-19 05:06:11	low-key	But now that I'm checking out other people's config files for Sway, they just do exec mako without an & at the end
+2020-12-19 05:06:16	<--	zalt (~devp@unaffiliated/lambda443) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:06:34	r3dux	alad: what its legacy bios?
+2020-12-19 05:06:35	HawkinsTheWizard	r3boot, nope. I have my hands full with .... beer
+2020-12-19 05:06:36	Namarrgon	low-key: no, this is not a shell script, & doesn't mean the same here
+2020-12-19 05:06:39	r3dux	what if*
+2020-12-19 05:06:44	low-key	Ah, thanks for clearing that up :)
+2020-12-19 05:06:50	alad	r3dux: in that case you need something seperate
+2020-12-19 05:07:22	-->	wabisuke (~arash@95.82.54.168) has joined #archlinux
+2020-12-19 05:07:34	-->	polve (~polve@88-149-225-191.dyn.eolo.it) has joined #archlinux
+2020-12-19 05:07:56	low-key	On a related note, I'm trying to setup gammastep and while it runs fine when I run gammastep -c /path/to/config/file from the terminal, adding the same as exec gammastep /path/to/config/file to my sway config file doesn't have any effect when reloading the config
+2020-12-19 05:07:58	alad	r3dux: and afaik systemd-boot doesn't work with bios
+2020-12-19 05:08:07	wabisuke	!paste
+2020-12-19 05:08:07	phrik	Paste short snippets (up to 3 lines) in channel. Please do NOT use pastebin.com or paste.ubuntu.com -- some good, sane paste services are http://ix.io, https://paste.rs, https://bpaste.net and https://gist.github.com. See !ix or !rs for an easy way to paste from a pipe.
+2020-12-19 05:08:09	HawkinsTheWizard	You could install archlinux... and run it in a vm with a host provided kernel, or a container, so then you dont need to install a bootloader or kernel
+2020-12-19 05:08:10	<--	_ashbreeze_ (~mark@184-157-32-85.dyn.centurytel.net) has quit (Remote host closed the connection)
+2020-12-19 05:08:14	low-key	reloading the config should run it, right?
+2020-12-19 05:08:22	r3dux	alad: dang, I never use grub for anything.. i always hide the menu. It would be nice to not have it at all.
+2020-12-19 05:08:25	NetSysFire	alad: i think it does but one does need to install it manually into the mbr
+2020-12-19 05:08:30	NetSysFire	!give r3dux aw bootloader
+2020-12-19 05:08:31	phrik	r3dux: Bootloader - https://wiki.archlinux.org/index.php/Bootloader
+2020-12-19 05:08:41	NetSysFire	see the fancy table
+2020-12-19 05:08:46	NetSysFire	oh wait nvm
+2020-12-19 05:08:47	-->	mrbanie (~mrbanie@unaffiliated/mrbanie) has joined #archlinux
+2020-12-19 05:08:50	alad	NetSysFire: huh
+2020-12-19 05:09:01	NetSysFire	its mbr, not bios
+2020-12-19 05:09:19	HawkinsTheWizard	theres 3 other options.  you could use syslinux, efi, or coreboot
+2020-12-19 05:09:26	r3dux	I have another arch machine that is efi, so im still gonna check it out.
+2020-12-19 05:09:35	NetSysFire	coreboot sounds like pain
+2020-12-19 05:09:53	r3dux	coreboot is impossible on my efi machine
+2020-12-19 05:09:57	HawkinsTheWizard	a pain I plan on inflictin on myself one day
+2020-12-19 05:10:00	alad	I remember in berlin guy tried for 3h to install it and then his laptop borked anyway
+2020-12-19 05:10:03	alad	but that's just an anecdote ;O
+2020-12-19 05:10:14	wabisuke	I do not understand the problem, can anyone help? https://bpa.st/26LA
+2020-12-19 05:10:14	phrik	Title: View paste 26LA (at bpa.st)
+2020-12-19 05:10:26	-->	al2o3-cr (~gr33n7007@unaffiliated/gr33n7007h) has joined #archlinux
+2020-12-19 05:10:41	wabisuke	I cant run pip search 
+2020-12-19 05:10:53	NetSysFire	did you check that website?
+2020-12-19 05:10:58	ayekat	wabisuke: yeah, apparently you're now supposed to use something else - isn't there more error message with that?
+2020-12-19 05:11:00	Scimmia	wabisuke: "PyPI's XMLRPC API has been temporarily disabled due to unmanageable load"
+2020-12-19 05:11:04	Scimmia	seems pretty clear
+2020-12-19 05:11:20	r3dux	wabisuke: my pip search hasnt been working either last couple days... but pip install does
+2020-12-19 05:11:31	<--	mingzzx (~mingzzx@222.175.198.27) has quit
+2020-12-19 05:11:42	alad	I wonder if "pip update" still works
+2020-12-19 05:12:11	wabisuke	ayekat, no there aren't more error messages, so what should i do
+2020-12-19 05:12:12	wabisuke	?
+2020-12-19 05:12:19	r3dux	alad: it doesnt
+2020-12-19 05:12:41	alad	heh
+2020-12-19 05:12:57	-->	chris64 (~chris@unaffiliated/chris64) has joined #archlinux
+2020-12-19 05:13:01	ayekat	ah, in some variants of that error message, there is 'Please use the Simple or JSON API instead.'
+2020-12-19 05:13:19	r3dux	wabisuke: the last line in the error is throws doesn't look promising..
+2020-12-19 05:13:22	 *	ayekat doesn't use pip and doesn't understand that message
+2020-12-19 05:13:35	HawkinsTheWizard	is pip a person?
+2020-12-19 05:13:37	<--	toxblh (~Thunderbi@89.34.166.15) has quit (Ping timeout: 260 seconds)
+2020-12-19 05:13:47	wabisuke	Scimmia, So Do i have to reinstall it?
+2020-12-19 05:14:05	NetSysFire	once again, did you check that website?
+2020-12-19 05:14:05	HawkinsTheWizard	sorry, bad serenity joke
+2020-12-19 05:14:08	Scimmia	wabisuke: how would that help?
+2020-12-19 05:14:20	-->	koffeinfriedhof (~koffeinfr@ubuntuusers/moderation/koffeinfriedhof) has joined #archlinux
+2020-12-19 05:14:24	<--	apus (~apus@gateway/tor-sasl/apus) has quit (Remote host closed the connection)
+2020-12-19 05:14:27	Scimmia	read the error, word  by word. Look at the link it gave you. Think things through
+2020-12-19 05:14:41	-->	apus (~apus@gateway/tor-sasl/apus) has joined #archlinux
+2020-12-19 05:14:53	wabisuke	Scimmia, :) I don't know you said PyPI is dameged
+2020-12-19 05:15:07	Scimmia	I quoted the error YOU posted
+2020-12-19 05:15:13	h4rd3n3D	alad:  to your ^earlier point:  systemd-boot, previously called gummiboot (German for: 'rubber dinghy'), is a simple UEFI boot manager which executes configured EFI images. from: https://wiki.archlinux.org/index.php/Systemd-boot
+2020-12-19 05:15:14	phrik	Title: systemd-boot - ArchWiki (at wiki.archlinux.org)
+2020-12-19 05:15:22	<--	batot (5bc43811@host-91.196.56.17.algrim.pl) has quit (Remote host closed the connection)
+2020-12-19 05:15:28	alad	h4rd3n3D: ye
+2020-12-19 05:15:29	NetSysFire	gummiboot sounds like a boat made of rubber
+2020-12-19 05:15:38	alad	that's probably the joke
+2020-12-19 05:15:54	HawkinsTheWizard	https://status.python.org/
+2020-12-19 05:15:55	phrik	Title: Python Infrastructure Status (at status.python.org)
+2020-12-19 05:16:07	<--	smanched (~smanched@72-50-207-203.fttp.usinternet.com) has quit (Read error: Connection reset by peer)
+2020-12-19 05:16:08	NetSysFire	reading error messages is really taxing
+2020-12-19 05:16:15	r3dux	wabisuke: Update - The XMLRPC Search endpoint is still disabled due to ongoing request volume. As of this update, there has been no reduction in inbound traffic to the endpoint from abusive IPs and we are unable to re-enable the endpoint, as it would immediately cause PyPI service to degrade again. We are working with the abuse contact at the owner of the IPs and trying to make contact with the
+2020-12-19 05:16:15	r3dux	maintainers of whatever tool is flooding us via other channels. 
+2020-12-19 05:16:17	h4rd3n3D	lols, smart Boys scare me ;p
+2020-12-19 05:16:41	r3dux	wabisuke: Monitoring - With the temporary disabling of XMLRPC we are hoping that the mass consumer that is causing us trouble will make contact. Due to the huge swath of IPs we were unable to make a more targeted block without risking more severe disruption, and were not able to receive a response from their abuse contact or direct outreach in an actionable time frame. 
+2020-12-19 05:16:45	-->	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has joined #archlinux
+2020-12-19 05:17:13	r3dux	wabisuke: looks like someone setup a rack of raspberry pi's, and theyre having a pip party..
+2020-12-19 05:17:19	alad	#archlinux-stackexchange
+2020-12-19 05:17:47	NetSysFire	is that really a thing now?
+2020-12-19 05:17:48	wabisuke	:D
+2020-12-19 05:17:50	HawkinsTheWizard	or someone finally fixed their python updates for their mass deployed routers.
+2020-12-19 05:17:53	alad	NetSysFire: it is now, apparently
+2020-12-19 05:18:00	NetSysFire	\o/
+2020-12-19 05:18:27	r3dux	NetSysFire: its a thing, don't you instagram bruhh?
+2020-12-19 05:18:36	NetSysFire	its dns-blocked
+2020-12-19 05:18:46	NetSysFire	just like every other facebook service
+2020-12-19 05:19:08	HawkinsTheWizard	my facebook is also blocked....by me
+2020-12-19 05:19:23	alad	NetSysFire: https://sr.ht/~cadence/bibliogram/ ;OOO
+2020-12-19 05:19:28	phrik	Title: bibliogram: An alternative front-end for Instagram. (at sr.ht)
+2020-12-19 05:19:43	NetSysFire	i am against everything facebook. i dont even have whatsapp
+2020-12-19 05:19:51	mongy	👍
+2020-12-19 05:19:52	r3dux	NetSysFire, HawkinsTheWizard, probably good choices.. i just can't stop though. its like crack
+2020-12-19 05:20:25	HawkinsTheWizard	r3dux, exactly why I quit. and the spying of course
+2020-12-19 05:20:37	NetSysFire	i wonder if i should document all my troubleshooting tips in a user page on the wiki
+2020-12-19 05:20:45	NetSysFire	i dont like the general troubleshooting page that much tbh
+2020-12-19 05:21:02	alad	probably because no soul looks at the general troubleshooting page
+2020-12-19 05:21:09	HawkinsTheWizard	NetSysFire, doesnt matter, the newbs still wont read the wiki
+2020-12-19 05:21:17	NetSysFire	i still have hope!
+2020-12-19 05:21:18	-->	freebench (~freebench@92.253.250.131) has joined #archlinux
+2020-12-19 05:21:20	alad	they're like "IRC... hmm. let's ask there"
+2020-12-19 05:21:20	r3dux	HawkinsTheWizard: It's def not good..I spend way too much time looking at stupid stuff on there.. Major FOMO if i don't look at it... even though everything on there is fake.
+2020-12-19 05:21:28	r3dux	But what about youtube? 
+2020-12-19 05:21:44	r3dux	I can't even imagine not using youtube at this point.
+2020-12-19 05:21:48	HawkinsTheWizard	true. youtube still sucks me in
+2020-12-19 05:21:50	alad	r3dux: https://github.com/iv-org/invidious ;OOOO
+2020-12-19 05:21:51	phrik	Title: GitHub - iv-org/invidious: Invidious is an alternative front-end to YouTube (at github.com)
+2020-12-19 05:22:07	NetSysFire	alad: i think it is because the general troubleshooting page basically "prepares" them for asking here
+2020-12-19 05:22:38	HawkinsTheWizard	also. most people have trouble with the concept of searching
+2020-12-19 05:22:41	h4rd3n3D	hmmh...in my case it was FB's LOSS of merely 550+ Million customer records - a truly superb company with world-class security ;p
+2020-12-19 05:22:55	NetSysFire	i think help vampires might be a vocal minority
+2020-12-19 05:23:05	NetSysFire	also newbies != help vampires
+2020-12-19 05:23:06	r3dux	alad: wow, this is cool! is it lacking anything though?
+2020-12-19 05:23:44	<--	phonemic (~phonemic@104-60-219-66.lightspeed.nsvltn.sbcglobal.net) has quit (Quit: WeeChat 2.9)
+2020-12-19 05:24:14	alad	r3dux: if you don't produce videos, not really
+2020-12-19 05:24:22	HawkinsTheWizard	h4rd3n3D, no, I was the one with the problem.  I was afraid 3 letter agencies were going to knock on my door.
+2020-12-19 05:24:24	alad	might have a bug or 2
+2020-12-19 05:24:33	NetSysFire	like every software
+2020-12-19 05:24:41	alad	oui
+2020-12-19 05:25:14	HawkinsTheWizard	hmmm, can someone put that in the extra repo?
+2020-12-19 05:25:30	r3dux	but you can read and leave comments? because... we all know thats the best part of youtube... the comment section.
+2020-12-19 05:25:54	NetSysFire	because of my umatrix shenanigans the comment section doesnt load for me. i think its for the better
+2020-12-19 05:26:07	<--	portalrat (~muskrat@trivialand/player/muskrat) has quit (Ping timeout: 260 seconds)
+2020-12-19 05:26:41	r3dux	NetSysFire: you're missing out... some of those comments are comedic gold.
+2020-12-19 05:26:41	h4rd3n3D	HawkinsTheWizard:  sure, ^that or the ever-present threat of your neighbors 'SWATTING' you with a 'no-knock' warrant - almost the same as during 1941-1945 ;p
+2020-12-19 05:28:00	<--	lkh (~lkh@dslb-002-206-128-108.002.206.pools.vodafone-ip.de) has quit (Quit: leaving)
+2020-12-19 05:28:16	alad	r3dux: didn't try the leaving comments part
+2020-12-19 05:28:17	alad	!tias
+2020-12-19 05:28:19	phrik	Try It And See™
+2020-12-19 05:28:21	<--	kageru (~kageru@2a04:4540:6f15:a100:bc38:fa83:16b3:84e3) has quit (Ping timeout: 272 seconds)
+2020-12-19 05:28:33	HawkinsTheWizard	I always feel I could make a great comment.  its a good thing I'm not allowed.
+2020-12-19 05:28:51	r3dux	lol
+2020-12-19 05:28:59	<--	TorrodA (~TorrodA@unaffiliated/torroda) has quit (Quit: WeeChat 2.9)
+2020-12-19 05:29:01	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2020-12-19 05:29:19	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #archlinux
+2020-12-19 05:29:26	-->	TorrodA (~TorrodA@unaffiliated/torroda) has joined #archlinux
+2020-12-19 05:29:28	HawkinsTheWizard	hey , we are serious here. take it to #archlinux-offtopic
+2020-12-19 05:29:34	-->	gulzar (~gulzar@122.170.227.223) has joined #archlinux
+2020-12-19 05:30:24	HawkinsTheWizard	pacman is perfect. not bugs
+2020-12-19 05:30:53	NetSysFire	pacman doesnt have bugs. it has elephants though
+2020-12-19 05:31:30	HawkinsTheWizard	totally different problem. not a bug though.
+2020-12-19 05:31:32	ejsav	umatrix makes internet browsing a divine experience
+2020-12-19 05:31:35	ejsav	again
+2020-12-19 05:32:01	r3dux	alad: naa, all my youtube watching is done on my phone so id never use it.. interesting though.
+2020-12-19 05:32:02	ejsav	i'm blissfully unaware of the entirety of twitter.com
+2020-12-19 05:32:08	<--	chour (~rue@1-162-45-43.dynamic-ip.hinet.net) has quit (Quit: WeeChat 2.9)
+2020-12-19 05:32:24	-->	chour (~rue@1-162-45-43.dynamic-ip.hinet.net) has joined #archlinux
+2020-12-19 05:32:32	HawkinsTheWizard	yeah, umatrix you just need to enable every friggin element that makes the page work. cant even prove you are nopt a robot
+2020-12-19 05:32:44	alad	r3dux: you're saying it doesn't work on a phone?
+2020-12-19 05:32:47	alad	oh
+2020-12-19 05:32:52	alad	r3dux: I use newpipe on my phone :3
+2020-12-19 05:32:52	NetSysFire	HawkinsTheWizard: but but muh secruity
+2020-12-19 05:33:01	alad	r3dux: works in the background ;OOO
+2020-12-19 05:33:03	<--	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:33:22	ejsav	Maybe I didn't want those parts of the page to work
+2020-12-19 05:33:32	low-key	there's this nice alternative frontend to twitter i discovered recently
+2020-12-19 05:33:33	NetSysFire	like the comment sections!
+2020-12-19 05:33:33	low-key	nitter.net
+2020-12-19 05:33:40	NetSysFire	or teddit
+2020-12-19 05:33:45	ejsav	NetSysFire: indeed
+2020-12-19 05:33:48	low-key	and there's also a reddit alternative
+2020-12-19 05:33:53	low-key	but NetSysFire got there before me
+2020-12-19 05:33:58	HawkinsTheWizard	oh, dont get me wrong. I use umatrix, and multi-containers,  so I need to set each container's matrix
+2020-12-19 05:34:00	r3dux	low-key: nitter is dope
+2020-12-19 05:34:16	low-key	yeah, it's the only twitter is usable from the mobile
+2020-12-19 05:34:21	low-key	their mobile site is horrible
+2020-12-19 05:34:37	alad	low-key: "let's make the mobile site as bad as possible so people will use our App"
+2020-12-19 05:34:45	ejsav	Over the years my computer usage has trended away from most things that cause me problems anyway.  I had to whitelist some things for youtube and for mobile banking
+2020-12-19 05:34:49	low-key	that's definitely what reddit is doing
+2020-12-19 05:34:59	ejsav	sr.ht isn't giving me any trouble
+2020-12-19 05:35:00	low-key	but then teddit came to the rescue
+2020-12-19 05:35:06	ejsav	neither are the arch or openbsd pages
+2020-12-19 05:35:16	-->	sigod (~sigod@unaffiliated/sigod) has joined #archlinux
+2020-12-19 05:35:27	ejsav	s/mobile banking/online banking
+2020-12-19 05:35:32	HawkinsTheWizard	mobile banking insisted we switch on location to prevent fraud....
+2020-12-19 05:35:59	ejsav	that's kind of reasonable
+2020-12-19 05:36:39	<--	spiri (~spiri@unaffiliated/spiri) has quit (Ping timeout: 260 seconds)
+2020-12-19 05:36:52	-->	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has joined #archlinux
+2020-12-19 05:37:18	HawkinsTheWizard	thats the problem.  it is reasonable.  and therefor you have no excuse to give your location data.
+2020-12-19 05:37:24	h4rd3n3D	NetSysFire:  does 'gummi' literally mean rubber in German?  iirc, I've seen Hollywood movies where rubber boots were referred to as:  gum-boots, or gummi-boots (but never applied to boats), which are always called rubber (inflatable) boats, in English.  :D 
+2020-12-19 05:37:38	-->	deltahotel (~yaaic@80.12.250.64) has joined #archlinux
+2020-12-19 05:37:50	HawkinsTheWizard	we also call them gum-boots
+2020-12-19 05:38:06	ejsav	doesn't rubber come from gum trees?
+2020-12-19 05:38:07	NetSysFire	h4rd3n3D: gummi does mean rubber. we also say "gummibären" to gummy bears though
+2020-12-19 05:38:21	h4rd3n3D	nice!
+2020-12-19 05:38:25	HawkinsTheWizard	gross. rubber bears
+2020-12-19 05:38:29	h4rd3n3D	and thanks, ofs
+2020-12-19 05:38:44	h4rd3n3D	and *ofc
+2020-12-19 05:39:04	NetSysFire	also see https://www.dict.cc/?s=gummi&=DEEN&=
+2020-12-19 05:39:06	phrik	Title: gummi | Übersetzung Englisch-Deutsch (at www.dict.cc)
+2020-12-19 05:39:18	eoli3n	Hi
+2020-12-19 05:39:22	ejsav	Bubbi Bjørnene?
+2020-12-19 05:39:22	NetSysFire	!give eoli3n welcome
+2020-12-19 05:39:23	phrik	eoli3n: Welcome to #archlinux, tell us how you fucked up.
+2020-12-19 05:39:29	-->	FutureShock (Euph0ria@gateway/vpn/privateinternetaccess/euph0ria) has joined #archlinux
+2020-12-19 05:39:41	gulzar	hahaha , that's some welcome message
+2020-12-19 05:39:46	eoli3n	i didn't :) but thanks
+2020-12-19 05:40:11	eoli3n	i'm searching for a simple pastebin client ? a kind of (up to date) pastebinit
+2020-12-19 05:40:14	-->	spiri (~spiri@unaffiliated/spiri) has joined #archlinux
+2020-12-19 05:40:31	ejsav	after I finish learning Danish I should learn German
+2020-12-19 05:40:42	eoli3n	a client which set automatically filetype
+2020-12-19 05:40:43	NetSysFire	eoli3n: read the /topic
+2020-12-19 05:41:06	NetSysFire	the factoid doesnt mention 0x0.st though
+2020-12-19 05:41:29	eoli3n	!paste
+2020-12-19 05:41:29	phrik	Paste short snippets (up to 3 lines) in channel. Please do NOT use pastebin.com or paste.ubuntu.com -- some good, sane paste services are http://ix.io, https://paste.rs, https://bpaste.net and https://gist.github.com. See !ix or !rs for an easy way to paste from a pipe.
+2020-12-19 05:41:36	<--	albatr0ss (~sahej@103.208.70.90) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:41:53	eoli3n	that are no paste clients
+2020-12-19 05:41:56	eoli3n	just pastebins
+2020-12-19 05:42:04	alad	eoli3n: you can write a curl alias or wrapper
+2020-12-19 05:42:05	eoli3n	ix doesnt set filetype
+2020-12-19 05:42:08	eoli3n	i did
+2020-12-19 05:42:10	eoli3n	!aur upaste
+2020-12-19 05:42:10	phrik	eoli3n: Is that… Is that really a word?
+2020-12-19 05:42:24	-->	albatr0ss (~sahej@103.208.70.90) has joined #archlinux
+2020-12-19 05:42:34	eoli3n	but i'm searching for a package that i can easily install on multiple os
+2020-12-19 05:42:41	eoli3n	phrik what word ?
+2020-12-19 05:42:41	phrik	eoli3n: Eh?
+2020-12-19 05:42:45	<--	mrbanie (~mrbanie@unaffiliated/mrbanie) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:42:57	eoli3n	do you know pastebinit ?
+2020-12-19 05:43:02	eoli3n	!rs
+2020-12-19 05:43:02	phrik	<command to print output> |& curl --data-binary @- https://paste.rs
+2020-12-19 05:43:10	eoli3n	i need to try that one
+2020-12-19 05:43:14	<--	su__deep (~su__deep@2401:4900:4153:6a10:3663:cfee:2124:870c) has quit (Ping timeout: 264 seconds)
+2020-12-19 05:43:23	alad	curl is pretty easy to get on windows
+2020-12-19 05:43:30	-->	fb_ (~freebench@92.253.250.131) has joined #archlinux
+2020-12-19 05:43:36	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.9)
+2020-12-19 05:43:43	eoli3n	but curl doesnt wrap multiple pastebins
+2020-12-19 05:43:44	-->	su__deep (~su__deep@182.69.192.205) has joined #archlinux
+2020-12-19 05:43:52	eoli3n	and you might need to set filetype manually
+2020-12-19 05:43:55	eoli3n	like for x0.at
+2020-12-19 05:44:05	alad	!hmmm
+2020-12-19 05:44:06	phrik	https://i.redd.it/6sg63uxoyhoz.jpg
+2020-12-19 05:44:07	eoli3n	so i'm searching for curl wrapper
+2020-12-19 05:44:18	eoli3n	huhu
+2020-12-19 05:44:31	eoli3n	yeah, kind of in your picture
+2020-12-19 05:44:47	eoli3n	!pkg upaste
+2020-12-19 05:44:47	phrik	https://www.archlinux.org/packages/?q=upaste
+2020-12-19 05:45:01	eoli3n	no factoid to search on aur ?
+2020-12-19 05:45:11	NetSysFire	!botabuse
+2020-12-19 05:45:12	phrik	Please take that crap to either a query or #archlinux-botabuse.
+2020-12-19 05:45:17	alad	written in go
+2020-12-19 05:45:41	eoli3n	written on anything which can be easily install on any os
+2020-12-19 05:46:15	eoli3n	NetSysFire i don't get what it means
+2020-12-19 05:46:18	<--	Forty-Bot (~kvirc@pool-108-51-35-162.washdc.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2020-12-19 05:46:20	<--	freebench (~freebench@92.253.250.131) has quit (Ping timeout: 268 seconds)
+2020-12-19 05:46:24	-->	LHLaurini (~LHLaurini@177.67.230.8.razaoinfo.com.br) has joined #archlinux
+2020-12-19 05:46:33	eoli3n	can i query factoids privatly ?
+2020-12-19 05:46:45	alad	yes
+2020-12-19 05:46:48	eoli3n	how
+2020-12-19 05:46:48	alad	/query phrik
+2020-12-19 05:46:54	eoli3n	ok
+2020-12-19 05:47:15	<--	ville (~ville@212-149-214-47.bb.dnainternet.fi) has left #archlinux
+2020-12-19 05:47:33	alad	looks like rust on windows either needs WSL or Visual Studio
+2020-12-19 05:47:38	alad	sounds fun
+2020-12-19 05:48:54	-->	Forty-Bot (~kvirc@pool-108-51-35-162.washdc.fios.verizon.net) has joined #archlinux
+2020-12-19 05:49:17	h4rd3n3D	lmfao alad, I was never sure that a dog could securely balance on a mule/jackass, but the chicken 'thing' confirms my worst drunken 100+ kMh motorcycle driving nightmares ;p
+2020-12-19 05:49:36	alad	:O
+2020-12-19 05:49:43	-->	jstein (~jstein@gentoo/developer/jstein) has joined #archlinux
+2020-12-19 05:49:56	low-key	got my gammastep figured out
+2020-12-19 05:50:04	low-key	just had to restart sway instead of reloading the config
+2020-12-19 05:50:23	-->	utack (~utack@2a02:810d:1380:a24:1e54:b6eb:6b01:9397) has joined #archlinux
+2020-12-19 05:51:46	Abdullah	I just wrote this screen locker but it isn't suspending dunst. Does someone has some idea? https://bpa.st/show/6A5A
+2020-12-19 05:51:49	phrik	Title: View paste 6A5A (at bpa.st)
+2020-12-19 05:52:10	-->	Atque (~Atque@unaffiliated/atque) has joined #archlinux
+2020-12-19 05:53:36	<--	Ruuchan (~Ruuchan@unaffiliated/ruuchan) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:53:37	<--	frvr (~florea@86.122.83.6) has quit (Remote host closed the connection)
+2020-12-19 05:53:46	<--	deltahotel (~yaaic@80.12.250.64) has quit (Ping timeout: 256 seconds)
+2020-12-19 05:54:23	Abdullah	A few weeks ago I was travelling with my puppy on bike 80 to 100 KMh and almost half of way he was sleepy.
+2020-12-19 05:54:38	Abdullah	had no rope against him. h4rd3n3D 
+2020-12-19 05:54:56	-->	portalrat (~muskrat@trivialand/player/muskrat) has joined #archlinux
+2020-12-19 05:55:02	Abdullah	travelled around 300 KMs
+2020-12-19 05:55:18	Abdullah	and roads situation in my area is so bad.
+2020-12-19 05:56:02	<--	PapuaHardyNet (PapuaHardy@gateway/vpn/mullvad/papuahardynet) has quit (Ping timeout: 256 seconds)
+2020-12-19 05:57:23	-->	_ashbreeze_ (~mark@184-157-32-85.dyn.centurytel.net) has joined #archlinux
+2020-12-19 05:57:23	<--	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Ping timeout: 240 seconds)
+2020-12-19 05:58:07	<--	beelzebuzz (~rasputin@gateway/tor-sasl/beelzebuzz) has quit (Remote host closed the connection)
+2020-12-19 05:58:20	-->	beelzebuzz (~rasputin@gateway/tor-sasl/beelzebuzz) has joined #archlinux
+2020-12-19 05:58:24	<--	andreas303 (~andreas@gateway/tor-sasl/andreas303) has quit (Remote host closed the connection)
+2020-12-19 05:58:56	-->	oliverlew (~lewinat0r@114.212.171.193) has joined #archlinux
+2020-12-19 06:00:31	<--	andreyv (~andrey@unaffiliated/andreyv) has quit (Ping timeout: 268 seconds)
+2020-12-19 06:00:42	-->	andreas303 (~andreas@gateway/tor-sasl/andreas303) has joined #archlinux
+2020-12-19 06:00:50	<--	murray (~murray@dyndsl-089-166-173-100.ewe-ip-backbone.de) has quit (Quit: Leaving)
+2020-12-19 06:00:54	-->	kageru (~kageru@2a04:4540:6f15:a100:bc38:fa83:16b3:84e3) has joined #archlinux
+2020-12-19 06:01:36	<--	esreverse (~esreverse@104.244.77.71) has quit (Ping timeout: 265 seconds)
+2020-12-19 06:01:36	<--	Pickchea (~private@unaffiliated/pickchea) has quit (Ping timeout: 240 seconds)
+2020-12-19 06:01:54	h4rd3n3D	Abdullah:  yep, I see dogs on motorcycles, often accompanied by 5-6+ family members, daily.  I've got a kick-ass Honda CBR - often with a beautiful woman on the back, and every day...I need to tell myself = SLOW the fuck down, MF!!  ;D
+2020-12-19 06:02:17	NetSysFire	!offtopic
+2020-12-19 06:02:18	phrik	Take it to #archlinux-offtopic
+2020-12-19 06:02:37	-->	mrbanie (~mrbanie@unaffiliated/mrbanie) has joined #archlinux
+2020-12-19 06:03:13	<--	al3x27 (~plovs@85.254.75.80) has quit (Ping timeout: 264 seconds)
+2020-12-19 06:03:40	-->	Alak (~Alak@unaffiliated/alakzadeh) has joined #archlinux
+2020-12-19 06:03:41	-->	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has joined #archlinux
+2020-12-19 06:04:06	-->	plastico (~plastico@2001:8a0:de6b:1a00:9d14:766e:70a8:dcea) has joined #archlinux
+2020-12-19 06:05:06	<--	wabisuke (~arash@95.82.54.168) has quit (Quit: Leaving)
+2020-12-19 06:05:21	-->	batot (5bc43811@host-91.196.56.17.algrim.pl) has joined #archlinux
+2020-12-19 06:06:27	-->	deltahotel (~yaaic@80.12.250.64) has joined #archlinux
+2020-12-19 06:06:32	<--	ctrlX1981 (~ctrlX@193-187-91-107.pool.ovpn.com) has quit (Quit: Konversation terminated!)
+2020-12-19 06:08:17	<--	r3dux (~r3dux@2600:8802:1809:4d00:a11:96ff:fe7c:5c18) has left #archlinux ("WeeChat 2.9")
+2020-12-28 01:31:35	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #archlinux
+2020-12-28 01:31:35	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org"
+2020-12-28 01:31:35	--	Topic set by jelle (~weechat@archlinux/developer/jelle) on Mon, 12 Oct 2020 09:16:36
+2020-12-28 01:31:35	--	Channel #archlinux: 1758 nicks (2 ops, 0 voices, 1756 normals)
+2020-12-28 01:31:37	--	Channel created on Sat, 14 Feb 2004 21:08:31
+2020-12-28 01:31:45	-->	krz (~krz@unaffiliated/krz) has joined #archlinux
+2020-12-28 01:34:03	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #archlinux
+2020-12-28 01:34:03	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org"
+2020-12-28 01:34:03	--	Topic set by jelle (~weechat@archlinux/developer/jelle) on Mon, 12 Oct 2020 09:16:36
+2020-12-28 01:34:03	--	Channel #archlinux: 1759 nicks (2 ops, 0 voices, 1757 normals)
+2020-12-28 01:34:05	--	Channel created on Sat, 14 Feb 2004 21:08:31
+2020-12-28 01:34:18	<--	krz_ (~krz@unaffiliated/krz) has quit (Client Quit)
+2020-12-28 01:34:32	-->	krz_ (~krz@unaffiliated/krz) has joined #archlinux

@@ -1,0 +1,27 @@
+2020-11-04 00:48:13	-->	r3dux (~r3dux@2600:8802:1800:537:a11:96ff:fe7c:5c18) has joined #python
+2020-11-04 00:48:13	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | Be nice. The Python CoC applies: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops are at #python-ops | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2020-11-04 00:48:13	--	Topic set by nedbat (~nedbat@python/psf/nedbat) on Wed, 19 Aug 2020 13:18:59
+2020-11-04 00:48:14	--	Channel #python: 1782 nicks (0 ops, 0 voices, 1782 normals)
+2020-11-04 00:48:16	--	Channel created on Sat, 25 Nov 2006 22:42:41
+2020-11-04 00:48:41	-->	sandeepk__ (~sandeepk@2409:4056:201c:977b:614d:5e22:3adc:328e) has joined #python
+2020-11-04 00:50:26	<--	medard (~medard@unaffiliated/medard) has quit (Quit: Leaving)
+2020-11-04 00:50:40	<--	drymer (~drymer@unaffiliated/drymer) has quit (Read error: Connection reset by peer)
+2020-11-04 00:51:41	-->	drymer (~drymer@unaffiliated/drymer) has joined #python
+2020-11-04 00:52:25	<--	sandeep (~sandeepk@42.111.6.240) has quit (Ping timeout: 264 seconds)
+2020-12-27 17:15:17	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #python
+2020-12-27 17:15:17	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | Be nice. The Python CoC applies: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops are at #python-ops | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2020-12-27 17:15:17	--	Topic set by nedbat (~nedbat@python/psf/nedbat) on Wed, 19 Aug 2020 13:18:59
+2020-12-27 17:15:17	--	Channel #python: 1789 nicks (0 ops, 0 voices, 1789 normals)
+2020-12-27 17:15:19	--	Channel created on Sat, 25 Nov 2006 22:42:41
+2020-12-27 17:15:24	<--	DaNeenjah (~DaNeenjah@adsl-74-230-10-37.hsv.bellsouth.net) has quit (Quit: WeeChat 3.0)
+2020-12-27 17:15:51	-->	DaNeenjah (~DaNeenjah@adsl-74-230-10-37.hsv.bellsouth.net) has joined #python
+2020-12-27 17:16:02	<--	predmijat (~predmijat@mail.strogopro.com) has quit (Quit: bye)
+2020-12-27 17:16:06	cads	As the project owner, I actually want full control over how my project builds, and I don't want to give my devs (ie, myself) any choice in the matter. Ie, I'm maintaining half a dozen projects, and I'm bugging out because I'm seeing a single line "poetry.toml" in each one. It needs to end. It needs to move into the main project config file. I'm not going to maintain an extra single line config file.
+2020-12-27 17:16:56	grym	never heard of a poetry.toml
+2020-12-27 17:16:57	grym	what's it do
+2020-12-27 17:17:24	-->	predmijat (~predmijat@mail.strogopro.com) has joined #python
+2020-12-27 17:17:43	<--	Shoe (uid40690@gateway/web/irccloud.com/x-tuxtnnsbvwtfendu) has quit (Quit: Connection closed for inactivity)
+2020-12-27 17:17:44	cads	as far as I am concerned, it lets you set the
+2020-12-27 17:17:44	cads	in-project = true   configuration, which authors were reluctant to push into pyproject.toml
+2020-12-27 17:18:01	grym	what's _that_ do
+2020-12-27 17:18:01	<--	tiin57 (~tiin57@ec2-3-94-63-186.compute-1.amazonaws.com) has quit (Read error: Connection reset by peer)

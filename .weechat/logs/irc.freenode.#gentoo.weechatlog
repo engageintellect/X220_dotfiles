@@ -1,0 +1,47 @@
+2020-12-27 17:19:18	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #gentoo
+2020-12-27 17:19:18	--	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://wiki.gentoo.org/wiki/Project:Ops#Channel_Policy | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-12-27 17:19:18	--	Topic set by rej (~jer@gentoo/developer/jer) on Tue, 29 Sep 2020 21:40:57
+2020-12-27 17:19:18	--	Channel #gentoo: 1059 nicks (2 ops, 52 voices, 1005 normals)
+2020-12-27 17:19:18	--	PvNotice(ChanServ): Welcome to #gentoo || Acceptable Usage Policy @ http://www.gentoo.org/main/en/irc.xml || Keep the language clean || Google is your friend || No bots or scripts that talk || Turn off public away messages || More than three lines to #flood or a pastebin service, no spam!
+2020-12-27 17:19:18	--	URL for #gentoo: http://www.gentoo.org
+2020-12-27 17:19:20	--	Channel created on Fri, 14 Sep 2001 20:15:36
+2020-12-27 17:20:23	-->	fstd_ (~fstd@unaffiliated/fisted) has joined #gentoo
+2020-12-27 17:20:42	-->	Paradox991 (327b448c@50.123.68.140) has joined #gentoo
+2020-12-27 17:20:45	-->	r0o0t (~root@140.177.245.111) has joined #gentoo
+2020-12-27 17:20:53	Paradox991	What is the current state of wayland on gentoo's gnome?
+2020-12-27 17:20:55	r0o0t	How do you uninstall all packages except @system ?
+2020-12-27 17:21:31	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #gentoo
+2020-12-27 17:21:31	--	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://wiki.gentoo.org/wiki/Project:Ops#Channel_Policy | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-12-27 17:21:31	--	Topic set by rej (~jer@gentoo/developer/jer) on Tue, 29 Sep 2020 21:40:57
+2020-12-27 17:21:31	--	Channel #gentoo: 1062 nicks (2 ops, 52 voices, 1008 normals)
+2020-12-27 17:21:31	--	PvNotice(ChanServ): Welcome to #gentoo || Acceptable Usage Policy @ http://www.gentoo.org/main/en/irc.xml || Keep the language clean || Google is your friend || No bots or scripts that talk || Turn off public away messages || More than three lines to #flood or a pastebin service, no spam!
+2020-12-27 17:21:31	--	URL for #gentoo: http://www.gentoo.org
+2020-12-27 17:21:32	--	Channel created on Fri, 14 Sep 2001 20:15:36
+2020-12-27 17:21:37	+grknight	r0o0t: what a strange question
+2020-12-27 17:22:22	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #gentoo
+2020-12-27 17:22:22	--	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://wiki.gentoo.org/wiki/Project:Ops#Channel_Policy | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-12-27 17:22:22	--	Topic set by rej (~jer@gentoo/developer/jer) on Tue, 29 Sep 2020 21:40:57
+2020-12-27 17:22:22	--	Channel #gentoo: 1061 nicks (2 ops, 52 voices, 1007 normals)
+2020-12-27 17:22:22	--	PvNotice(ChanServ): Welcome to #gentoo || Acceptable Usage Policy @ http://www.gentoo.org/main/en/irc.xml || Keep the language clean || Google is your friend || No bots or scripts that talk || Turn off public away messages || More than three lines to #flood or a pastebin service, no spam!
+2020-12-27 17:22:22	--	URL for #gentoo: http://www.gentoo.org
+2020-12-27 17:22:23	+grknight	no, no it will not
+2020-12-27 17:22:24	--	Channel created on Fri, 14 Sep 2001 20:15:36
+2020-12-27 17:22:31	zgu|skaro	you're doing it wrong if you think that
+2020-12-27 17:23:59	+grknight	the minimum command to update a system is: emerge -uDU @world (though -N may replace -U)
+2020-12-27 17:24:29	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #gentoo
+2020-12-27 17:24:29	--	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://wiki.gentoo.org/wiki/Project:Ops#Channel_Policy | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-12-27 17:24:29	--	Topic set by rej (~jer@gentoo/developer/jer) on Tue, 29 Sep 2020 21:40:57
+2020-12-27 17:24:29	--	Channel #gentoo: 1060 nicks (2 ops, 52 voices, 1006 normals)
+2020-12-27 17:24:29	--	PvNotice(ChanServ): Welcome to #gentoo || Acceptable Usage Policy @ http://www.gentoo.org/main/en/irc.xml || Keep the language clean || Google is your friend || No bots or scripts that talk || Turn off public away messages || More than three lines to #flood or a pastebin service, no spam!
+2020-12-27 17:24:29	--	URL for #gentoo: http://www.gentoo.org
+2020-12-27 17:24:31	--	Channel created on Fri, 14 Sep 2001 20:15:36
+2020-12-27 17:24:58	<--	fstd (~fstd@unaffiliated/fisted) has quit (Ping timeout: 268 seconds)
+2020-12-27 17:24:58	--	fstd_ is now known as fstd
+2020-12-27 17:25:04	<--	EchelonX (~EchelonX@cpe-173-88-115-50.columbus.res.rr.com) has quit (Quit: Leaving)
+2020-12-27 17:26:07	-->	r3dux (~r3dux@ip70-187-234-142.oc.oc.cox.net) has joined #gentoo
+2020-12-27 17:26:07	--	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://wiki.gentoo.org/wiki/Project:Ops#Channel_Policy | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-12-27 17:26:07	--	Topic set by rej (~jer@gentoo/developer/jer) on Tue, 29 Sep 2020 21:40:57
+2020-12-27 17:26:07	--	Channel #gentoo: 1058 nicks (2 ops, 52 voices, 1004 normals)
+2020-12-27 17:26:07	--	PvNotice(ChanServ): Welcome to #gentoo || Acceptable Usage Policy @ http://www.gentoo.org/main/en/irc.xml || Keep the language clean || Google is your friend || No bots or scripts that talk || Turn off public away messages || More than three lines to #flood or a pastebin service, no spam!
+2020-12-27 17:26:07	--	URL for #gentoo: http://www.gentoo.org
+2020-12-27 17:26:09	--	Channel created on Fri, 14 Sep 2001 20:15:36
