@@ -63,7 +63,6 @@ alias audio='pavucontrol'
 alias eq='qpaeq'
 alias mixer='alsamixer'
 alias myip='ip --color=auto a'
-#alias neo='unimatrix -c white -s 92 -u abcdefghijklmnopqrstuvwxyz1234567890!@#$%'
 alias neo='cmatrix'
 alias nvimrc='nvim ~/.config/nvim/init.vim'
 alias files='ranger'
@@ -91,6 +90,8 @@ alias x220='ssh 192.168.0.2 -p 4320'
 # alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@54.177.92.108'
 alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@3.101.45.224'
 alias imac='ssh josh@192.168.0.44'
+alias pi_raspbian='ssh pi@192.168.0.184'
+alias pi_manjaro='ssh r3dux@192.168.0.185'
 
 
 #===[ DMENU ALIASES ]===#
@@ -116,6 +117,14 @@ f()
 }
 
 
+#=[ CD LS ]=#
+
+c()
+{
+    builtin cd "$@" && ls -l;
+}
+
+
 #=[ MAKE GIT REPO ]=#
 
 mkgit() 
@@ -129,6 +138,15 @@ mkgit()
 rmgit() 
 {
     python3 ~/code/python/projects/github_repo_maker/remove_github_repo.py $1
+}
+
+#=[ GIT ADD, COMMIT, PUSH ]=#
+
+acp()
+{
+    git add .
+    git commit -m $1
+    git push origin master
 }
 
 
@@ -151,10 +169,7 @@ scomp()
 
 
 #=[ VIM OPEN ]=#
-c()
-{
-    builtin cd "$@" && ls -l;
-}
+
 
 v() 
 {
@@ -210,6 +225,7 @@ tester() {
     echo '---[ TESTER ]---'
     echo '$@ [all args]             = ' $@
     echo '$0 [0 arg index]          = ' $0
+    echo '$@ [last args]            = ' $_
     echo '$1 [1st arg index]        = ' $1
     echo '$2 [2nd arg index]        = ' $2
     echo '$3 [3rd arg index]        = ' $3

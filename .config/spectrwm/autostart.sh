@@ -29,10 +29,11 @@ xset r rate 275 200
 /usr/bin/setxkbmap -option "caps:swapescape" &
 
 # RELOAD PYWAL
-rwal -R
+wal -R
 
 # COMPILE ST
 python /home/r3dux/bin/env/pywal/st_pywal.py
+
 
 # PROGRAMS
 clipmenud &
@@ -47,5 +48,10 @@ xautolock -time 20 -locker slock &
 killall -q picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --experimental-backends --config $HOME/.config/picom/picom.spectrwm &
+
+
+
+
+
 
 
