@@ -15,6 +15,7 @@ icloud
 bash_cheatsheet
 python_cheatsheet
 go_cheatsheet
+weechat
 quit")
 
 # DMENU
@@ -61,6 +62,9 @@ case $choice in
 	;;
     go_cheatsheet)
         choice="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjkpIW-taLtAhXiHTQIHSK1B-kQFjAAegQIAhAC&url=https%3A%2F%2Fdevhints.io%2Fgo&usg=AOvVaw3h5i-0azn8rCyfVeBThPRI"
+	;;
+    weechat)
+        choice="https://weechat.org/doc/stable/quickstart"
 	;;
 
 	*)
