@@ -28,7 +28,7 @@ Menu
 
 # LAUNCHER
 super + d
-    rofi -show run -p "RUN" -font "Hack Nerd Font 10" -location 1 -width 15 -lines 100
+    rofi -show run -p "RUN" -font "Hack Nerd Font 10" -location 0 -width 20 -lines 10
     # ~/bin/env/pywal/dmenu_pywal.sh
 
 # NETWORK
@@ -68,7 +68,8 @@ super + shift + p
 
 # ROFI RUN
 super + shift + d
-     rofi -show run -lines 6 -eh 2 -width 350 -padding 20 -font "Hack Nerd Font 10"
+    ~/bin/env/pywal/dmenu_pywal.sh
+    # rofi -show run -lines 6 -eh 2 -width 350 -padding 20 -font "Hack Nerd Font 10"
 # ROFI WINDOWS
 # super + shift + w
      # rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
