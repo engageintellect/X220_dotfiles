@@ -216,6 +216,11 @@ fkill()
 
 }
 
+display_set()
+{
+    ~/bin/env/display_settings/set_monitors.sh
+}
+
 
 
 
