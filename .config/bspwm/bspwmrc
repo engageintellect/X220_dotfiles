@@ -13,15 +13,9 @@
 . "${HOME}/.cache/wal/colors.sh"
 
 
-# CURSOR THEME (get rid of default X style)
-xsetroot -cursor_name left_ptr
-
-
 #===[ AUTOSTART ]===#
 
-# python /home/r3dux/bin/env/env.py
 /home/r3dux/bin/env/environment.sh
-
 
 
 #===[ WORKSPACES ]===#
@@ -87,8 +81,6 @@ bspc rule -a st-256color:scratchy state=floating sticky=on rectangle=900x600+0+0
 
 #===[ COLORS ]===#
 
-#background=${xrdb:color0:#222}
-#primary=$color1
 background=$color0
 foreground=$color7
 foreground_alt=$color7
