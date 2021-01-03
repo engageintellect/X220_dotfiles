@@ -23,8 +23,8 @@ warp_pointer		        = 0
 
 #===[ WINDOW DECORATION ]===#
 border_width          = 2
-color_focus = rgb:8A/44/8F
-color_unfocus = rgb:95/0b/24
+color_focus = rgb:5F/7B/87
+color_unfocus = rgb:10/0b/0b
 region_padding        = 6
 tile_gap              = 6
 
@@ -41,18 +41,18 @@ bar_enabled		            = 0
 bar_enabled_ws[1]	        = 0
 disable_border		        = 0
 bar_border_width	        = 0
-bar_color[1] = rgb:95/0b/24
+bar_color[1] = rgb:10/0b/0b
 bar_border[1]		        = rgb:ff/ff/ff
 bar_border_unfocus[1]	    = rgb:00/40/40
 bar_color_selected[1]	    = rgb:00/80/80
-bar_font_color_selected = rgb:8A/44/8F
-bar_font_color[1] = rgb:d8/e0/ed,rgb:8A/44/8F
+bar_font_color_selected = rgb:5F/7B/87
+bar_font_color[1] = rgb:df/eb/ec,rgb:5F/7B/87
 # bar_font		            = Hack Nerd Font:pixelsize=14:antialias=true
 bar_font		            = Hack Nerd Font:pixelsize=16:antialias=true , Joypixels:pixelsize=14
 bar_justify		            = center
 # bar_format                  = +N:+I +S [+D] +2<%a %b %d %y [%l:%M:%S] +2<+A+4<+V          # ORIGINAL
 # bar_format                  = +N:+I [+D]   [%l:%M:%S]  +A                                # CENTERED
-bar_format                  = +|L +@fg=1;+D[+I]+S|+@fg=0;+W  +|1C  +@fg=1;[+@fg=0; %a %b %d %H:%M +@fg=1;]+@fg=0;  +|R +A            # POLYBAR
+bar_format                  = +|L +@fg=1;+D[+I]+S|+@fg=0;+W  +|1C  +@fg=1;[+@fg=0; %a %b %d %H:%M +@fg=1;]+@fg=1;  +|R +A            # POLYBAR
 workspace_indicator	        = listcurrent,listactive,markcurrent,printnames
 bar_at_bottom		        = 0
 stack_enabled		        = 1
@@ -107,6 +107,7 @@ modkey = Mod4
 
 #===[ PROGRAMS ]===#
 program[term]		            = st
+program[scratchpad]		        = ~/bin/env/scratchy.sh
 program[alacritty]		        = alacritty
 program[python]                 = st -n python -e python
 program[node]                   = st -n node -e node
@@ -149,6 +150,7 @@ program[emoji]                  = rofi -show emoji -modi emoji -p "EMOJI" -font 
 ##################
 
 # Default quirks, remove with: quirk[class:name]    = NONE
+quirk[st-256color:scratchy]			                        = FLOAT
 quirk[youtube:youtube]			                    = WS[5]
 # quirk[Nitrogen:nitrogen]			                = FLOAT
 quirk[qpaeq:qpaeq]			                        = FLOAT
@@ -312,8 +314,8 @@ bind[wally]		            = MOD+Shift+w
 bind[bookmarks]		        = MOD+Shift+b
 bind[edit_configs]		    = MOD+Shift+e
 bind[compile_suckless]		= MOD+Shift+c
-bind[emoji]		= MOD+Shift+m
-bind[rofi]		    = MOD+d
+bind[emoji]		            = MOD+Shift+m
+bind[rofi]		            = MOD+d
 bind[dmenu_pywal]		    = MOD+Shift+d
 bind[pulsemixer]            = MOD+Shift+a
 bind[iwd]                   = MOD+Shift+n
@@ -329,3 +331,4 @@ bind[pcmanfm]               =MOD+Shift+i
 bind[mutt]                  =MOD+Shift+g
 bind[python]                =MOD+Control+p
 bind[node]                  =MOD+Control+n
+bind[scratchpad]              =Menu
