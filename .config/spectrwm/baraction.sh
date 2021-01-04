@@ -29,7 +29,7 @@ while :; do
 
 
         # DISPLAY BAR
-        echo " $ssid   $local_ip    $battery"
+        echo " $local_ip   $ssid    $battery"
         sleep $SLEEP_SEC
 done
 
