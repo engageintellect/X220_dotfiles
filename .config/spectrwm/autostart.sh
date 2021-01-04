@@ -28,6 +28,9 @@ xrandr --dpi 96
 xset r rate 275 200
 /usr/bin/setxkbmap -option "caps:swapescape" &
 
+$HOME/bin/env/display_settings/set_monitors.sh
+
+
 # RELOAD PYWAL
 wal -R
 
@@ -48,8 +51,6 @@ xautolock -time 20 -locker slock &
 killall -q picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --experimental-backends --config $HOME/.config/picom/picom.spectrwm &
-
-
 
 
 
