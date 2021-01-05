@@ -7,6 +7,8 @@
 ;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;==========================================================
+;
+; POLYBAR FOR VERTICAL DISPLAY
 
 [colors]
 background = ${xrdb:color0:#222}
@@ -16,14 +18,6 @@ foreground-alt = ${xrdb:color7:#222}
 primary = ${xrdb:color3:#222}
 secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
-
-#background = #000000
-#background-alt = #444
-#foreground = #ffffff
-#foreground-alt = #999999
-#primary = #ffb52a
-#secondary = #e60053
-#alert = #bd2c40
 
 [bar/new]
 monitor = ${env:MONITOR:DP1}
@@ -57,7 +51,7 @@ font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
 font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
 
 modules-left = xwindow
-; modules-center = date
+; modules-center = xwindow
 ; modules-right = eth wlan battery 
 
 tray-position = right

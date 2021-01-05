@@ -7,11 +7,9 @@
 ;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;==========================================================
-; 
-; MAIN POLYBAR
 ;
-; VERSION 2.0
-; BUILD: Thinkpad X200
+; Build: Surface Book 2
+; Version: 2.0
 
 
 [colors]
@@ -24,12 +22,12 @@ alert = ${xrdb:color3:#222}
 
 
 [bar/new]
-monitor = ${env:MONITOR:VGA1}
-monitor1 = ${env:MONITOR:LVDS1}
+dpi = 192
+;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 25
-offset-x = 0%
-offset-y = 0%
+height = 60
+;offset-x = 1%
+;offset-y = 1%
 radius = 0
 fixed-center = true
 background = ${colors.background}
@@ -37,27 +35,29 @@ foreground = ${colors.foreground}
 line-size = none
 line-color = #f00
 border-size = 0
-border-color = ${colors.primary}
+border-color = #00000000
 padding-left = 0
 padding-right = 0
 module-margin-left = 1
-module-margin-right = 2
-
+module-margin-right = 1
+bottom = false
 
 ; BAR FONTS
-font-0 = "Noto Sans:size=10;2"
-font-1 = "Font Awesome:style=Regular:pixelsize=10;1"
-; font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
-; font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-0 = "Ubuntu Regular:size=10;2"
+font-1 = "Ubuntu Mono:size=10;3"
+font-2 = "Font Awesome:style=Regular:pixelsize=12;1"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=12;1"
 
+; BAR MODULES
 modules-left = bspwm i3 xwindow
 modules-center = date
-modules-right = eth wlan battery 
-
+modules-right = eth wlan battery
+enable-ipc = true
 tray-position = right
 tray-padding = 2
-;tray-background = ${colors.background}
-enable-ipc = true
+tray-background = ${colors.background}
+tray-foreground = ${colors.primary}
 wm-restack = bspwm
 ;wm-restack = i3
 ;override-redirect = true
@@ -71,7 +71,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label =| %title:0:25:...%
+label =| %title:0:50:...%
 
 
 [module/xkeyboard]
@@ -79,13 +79,10 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
 
 
 [module/filesystem]
@@ -102,7 +99,6 @@ type = internal/bspwm
 label-focused = %name%
 label-focused-background = ${colors.primary}
 label-focused-foreground = ${colors.background}
-label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 label-occupied = %name%
 label-occupied-padding = 2
@@ -112,41 +108,9 @@ label-urgent-padding = 2
 label-empty = 
 label-empty-foreground = ${colors.foreground}
 label-empty-padding = 2
-label-separator =
+; Separator in between workspaces
+; label-separator = |
 
-
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
-strip-wsnumbers = true
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
-label-mode-padding = 1
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
-; focused = Active workspace on focused monitor
-label-focused =%name%
-label-focused-background = ${colors.primary}
-label-focused-foreground = ${colors.background}
-#label-focused-underline= ${colors.primary}
-label-focused-underline= #000000
-label-focused-padding = 1
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %name%
-label-unfocused-padding = 1
-; visible = Active workspace on unfocused monitor
-label-visible =%name%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
-; urgent = Workspace with urgency hint set
-label-urgent =%name%
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 1
-;Separator in between workspaces
-;label-separator = |
 
 
 [module/mpd]
@@ -186,19 +150,17 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU"
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
-format-underline = #f90000
 label = %percentage:2%%
 
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "MEM "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
-label = "%percentage_used%%  ]         "
+label = %percentage_used%%
 
 
 [module/wlan]
@@ -208,7 +170,7 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 format-connected-background = ${colors.background}
 label-connected-foreground = ${colors.primary}
-label-connected =  %local_ip%    %essid%
+label-connected =  %local_ip%   %essid%
 format-disconnected = <label-disconnected>
 label-disconnected = Connecting %ifname% to network %essid%...
 ramp-signal-0 = 
@@ -221,9 +183,8 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = eno1
 interval = 3.0
-format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected =  %local_ip%
@@ -239,12 +200,13 @@ type = internal/date
 interval = 5
 date =
 date-alt = "%m/%d/%y"
-time = "%l:%M %p  "
+time = "%l:%M %p"
 time-alt = %l:%M %p
 format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #ffffff
-label = %date%   %time%
+format-prefix-foreground = ${colors.primary}
+format-background = ${colors.background}
+format-foreground = ${colors.primary}
+label = %date% %time%
 
 
 [module/pulseaudio]
@@ -301,19 +263,21 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/battery]
 interval = 1.0
 type = internal/battery
-battery = BAT0
+battery = BAT2
 adapter = ADP1
 full-at = 98
 format-full = "<ramp-capacity> 100%  "
-format-charging = "<ramp-capacity>  <label-charging>  "
+format-charging = "<ramp-capacity> <label-charging>  "
 format-discharging = "<ramp-capacity> <label-discharging>  "
+
 format-full-background = ${colors.primary}
 format-full-foreground = ${colors.background}
 format-charging-background = ${colors.primary}
 format-charging-foreground = ${colors.background}
 format-discharging-background = ${colors.background}
 format-discharging-foreground = ${colors.primary}
-ramp-capacity-0 = " "
+
+ramp-capacity-0 = " " 
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
 ramp-capacity-3 = " "
@@ -325,15 +289,13 @@ type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
 format = <ramp> <label>
-format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-label = "[  TEMP %temperature-f%"
-label-warn = [  %temperature-f%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 =     
+ramp-1 =     
+ramp-2 =    
 ramp-foreground = ${colors.foreground-alt}
 
 
@@ -369,8 +331,8 @@ screenchange-reload = true
 ;compositing-border = over
 ;pseudo-transparency = false
 
+
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
 ; vim:ft=dosini
