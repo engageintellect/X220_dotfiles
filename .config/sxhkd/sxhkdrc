@@ -16,6 +16,8 @@
 #===[ UTILITIES ]===#
 
 # TERMINAL 
+button2
+    st
 super + Return
     st
 	#st -e zsh -c tmux
@@ -23,6 +25,8 @@ super + a
     alacritty
 
 # SCRATCHPAD
+super + button2
+    ~/bin/env/scratchy.sh
 Menu
     ~/bin/env/scratchy.sh
 
@@ -160,6 +164,9 @@ super + ctrl + q
     killall -q bspwm
 
 # CLOSE AND KILL
+super + button3
+	bspc node -{c,k}
+
 super + {_,shift + }q
 	bspc node -{c,k}
 
