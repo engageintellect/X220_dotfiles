@@ -78,7 +78,7 @@
     
     
     # PLACEMENT hxw from top x from right 
-    geometry = "500x500-10+40"
+    geometry = "500x500-0+20"
     
     # Shrink window if it's s556064maller than the width.  Will be ignored if
     # width is 0.
