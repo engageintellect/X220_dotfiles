@@ -22,11 +22,9 @@ super + Return
     st
 	#st -e zsh -c tmux
 super + a
-    alacritty
+    kitty
 
 # SCRATCHPAD
-super + button2
-    ~/bin/env/scratchy.sh
 Menu
     ~/bin/env/scratchy.sh
 
@@ -164,7 +162,7 @@ super + ctrl + q
     killall -q bspwm
 
 # CLOSE AND KILL
-super + button3
+super + button2
 	bspc node -{c,k}
 
 super + {_,shift + }q
