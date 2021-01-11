@@ -1,4 +1,4 @@
-#             _              _ _
+l             _              _ _
 #     _______| |__      __ _| (_) __ _ ___  ___  ___
 #    |_  / __| '_ \    / _` | | |/ _` / __|/ _ \/ __|
 #     / /\__ \ | | |  | (_| | | | (_| \__ \  __/\__ \
@@ -32,12 +32,10 @@ alias weather='python ~/code/python/projects/weather/local_weather.py'
 alias cheat='curl cheat.sh'
 alias net-speed='python ~/code/python/projects/network_tools/network_speed_test/main.py'
 alias getip='curl https://ipinfo.io/ip'
-alias url='~/bin/env/scripts/surf/surf_by_url'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias iwd='clear && iwctl'
 alias surf='surf -N'
 alias pyserver='python -m http.server 8080'
-alias s='python ~/bin/env/scripts/surf/searcher.py'
 alias ff='fzf'
 alias xf='sudo fff'
 alias del='trash-put'

@@ -120,4 +120,4 @@ bindkey -v
 
 
 #===[ ZSH RUNTIME ]===#
-clear && pfetch && python ~/code/python/tools/fortune.py
+clear && pfetch && python /home/r3dux/code/python/tools/fortune.py
