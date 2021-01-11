@@ -110,9 +110,9 @@ super + y
 
 # EMAIL
 super + g
-    bspc desktop -f '^7' && st -e mutt
+    bspc desktop -f '^6' && surf gmail.com
 super + shift + g
-    bspc desktop -f '^7' && surf gmail.com
+    bspc desktop -f '^6' && st -e mutt
 
 # PULSEMIXER
 super + shift + a
@@ -128,7 +128,7 @@ super + m
 
 # VIRTUALBOX
 super + v
-    bspc desktop -f '^8' && virtualbox
+    bspc desktop -f '^7' && virtualbox
 
 # EMACS
 super + e

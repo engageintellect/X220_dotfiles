@@ -25,7 +25,6 @@ _comps=(
 'add-zle-hook-widget' '_add-zle-hook-widget'
 'add-zsh-hook' '_add-zsh-hook'
 'admin' '_sccs'
-'alacritty' '_alacritty'
 'ali' '_mh'
 'alias' '_alias'
 'amaya' '_webbrowser'
@@ -635,6 +634,7 @@ _comps=(
 'killall' '_killall'
 'killall5' '_killall'
 'kioclient' '_kfmclient'
+'kitty' '_kitty'
 'knock' '_knock'
 'konqueror' '_webbrowser'
 'kpartx' '_kpartx'
@@ -1620,9 +1620,9 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _alacritty _bluetoothctl _bootctl _bspc _busctl \
-            _coredumpctl _curl _exa _hostnamectl _john \
-            _journalctl _kernel-install _libinput _localectl _loginctl \
+autoload -Uz _bluetoothctl _bootctl _bspc _busctl _coredumpctl \
+            _curl _exa _hostnamectl _john _journalctl \
+            _kernel-install _kitty _libinput _localectl _loginctl \
             _machinectl _mkinitcpio _mpv _networkctl _pacman \
             _polybar _polybar_msg _pulseaudio _resolvectl _rg \
             _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files _systemctl \
@@ -1782,5 +1782,5 @@ autoload -Uz +X _call_program
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
 
-#omz revision: 66e0438d4788d0a0cdc107b3975418f1a572e354
+#omz revision: 3d51d6307791cf49c2ef28f2c05a542e521d85d7
 #omz fpath: /home/r3dux/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /home/r3dux/.oh-my-zsh/custom/plugins/zsh-autosuggestions /home/r3dux/.oh-my-zsh/plugins/fzf /home/r3dux/.oh-my-zsh/plugins/git /home/r3dux/.oh-my-zsh/functions /home/r3dux/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/functions/Calendar /usr/share/zsh/functions/Chpwd /usr/share/zsh/functions/Completion /usr/share/zsh/functions/Completion/Base /usr/share/zsh/functions/Completion/Linux /usr/share/zsh/functions/Completion/Unix /usr/share/zsh/functions/Completion/X /usr/share/zsh/functions/Completion/Zsh /usr/share/zsh/functions/Exceptions /usr/share/zsh/functions/Math /usr/share/zsh/functions/MIME /usr/share/zsh/functions/Misc /usr/share/zsh/functions/Newuser /usr/share/zsh/functions/Prompts /usr/share/zsh/functions/TCP /usr/share/zsh/functions/VCS_Info /usr/share/zsh/functions/VCS_Info/Backends /usr/share/zsh/functions/Zftp /usr/share/zsh/functions/Zle
