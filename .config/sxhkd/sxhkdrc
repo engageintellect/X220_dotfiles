@@ -8,10 +8,11 @@
 # Version: 2.0
 
 ####################################################################################
-#                 
-# CUSTOM BINDINGS 
-#                 
+#                                                                                  #
+# CUSTOM BINDINGS                                                                  #
+#                                                                                  #
 ####################################################################################
+
 
 #===[ UTILITIES ]===#
 
@@ -26,7 +27,7 @@ super + a
 
 # SCRATCHPAD
 Menu
-    ~/bin/env/scratchy.sh
+    {~/bin/env/scratchy.sh, bspc node -c}
 
 # LAUNCHER
 super + d
@@ -39,7 +40,6 @@ super + shift + n
     #~/bin/env/networkmanager_dmenu_pywal.sh
     #networkmanager_dmenu  -fn 'mononoki Nerd Font-10' -nb '#000000' -sf '#000000' -sb '#ffffff' -nf '#ffffff'
 
-
 # EDIT CONFIGS
 super + shift + e
     ~/bin/env/scripts/edit_configs.sh
@@ -47,7 +47,6 @@ super + shift + e
 # COMPILE SUCKLESS
 super + shift + c
     ~/bin/env/scripts/compile_suckless.sh
-
 
 # CLIPMENU
 super + x
@@ -64,6 +63,7 @@ super + p
 # RELOAD POLYBAR
 super + shift + p
     killall polybar && polybar -r new && bspc config top_padding 25
+
 
 
 #==[ ROFI ]==#
@@ -83,6 +83,7 @@ super + shift + d
      # rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
 
 
+
 #===[ BROWSERS ]===#
 
 super + s 
@@ -95,10 +96,13 @@ super + c
 
 #==[ PROGRAM BINDINGS ]===#
 
+# EMOJIS
+super + shift + m
+    rofi -show emoji -modi emoji -p "EMOJ" -font "Nerd Hack font 10" -location 1 -width 20 -lines 100
+
 # DMENU BOOKMARKS
 super + shift + b
     ~/bin/env/scripts/bookmarks/bookmarks.sh
-
 
 # WALLY
 super + shift + w
@@ -147,6 +151,7 @@ Scroll_Lock
     slock
 
 
+
 #===[ BSPWM BINDINGS ]===#
 
 # REDLOAD SXHKD CONFIG 
@@ -168,9 +173,9 @@ super + button2
 super + {_,shift + }q
 	bspc node -{c,k}
 
-# TOGGLE MONOCLE LAYOUT
-super + shift + m
-	bspc desktop -l next
+# # TOGGLE MONOCLE LAYOUT
+# super + shift + m
+# 	bspc desktop -l next
 
 # TOGGLE FULLSCREEN
 super + Tab
@@ -205,9 +210,9 @@ super + shift + Return
 	bspc node -s biggest
 
 ####################################################################################
-#
-# FOCUS / SWAP
-#
+#                                                                                  #
+# FOCUS / SWAP WINDOWS                                                             #
+#                                                                                  #
 ####################################################################################
 
 # MOVE WINDOWS
@@ -249,9 +254,9 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 ####################################################################################
-#
-# PRESELECT
-#
+#                                                                                  #
+# PRESELECT                                                                        #
+#                                                                                  #
 ####################################################################################
 
 # PRESELECT DIRECTION
@@ -271,9 +276,9 @@ super + alt + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 ####################################################################################
-#
-# MOVE / RESIZE
-#
+#                                                                                  #
+# MOVE / RESIZE                                                                    #
+#                                                                                  #
 ####################################################################################
 
 # EXPAND WINDOW OUTWARD 
@@ -307,9 +312,9 @@ alt + l
 	bspc node -z right -20 0
 
 ####################################################################################
-#
-# HARDWARE CONTROLS
-#
+#                                                                                  #
+# HARDWARE CONTROLS                                                                #
+#                                                                                  #
 ####################################################################################
 
 # KEYBOARD VOLUME CONTROL
