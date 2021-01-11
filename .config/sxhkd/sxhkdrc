@@ -72,6 +72,15 @@ super + shift + p
 super + shift + d
     ~/bin/env/pywal/dmenu_pywal.sh
     # rofi -show run -lines 6 -eh 2 -width 350 -padding 20 -font "Hack Nerd Font 10"
+
+# ROFI GOOGLE SEARCH
+super + shift + s
+    ~/bin/env/scripts/surf/rofi_google_search.sh
+
+# ROFI URL SURF
+super + shift + u
+    ~/bin/env/scripts/surf/rofi_url_surf.sh
+
 # ROFI WINDOWS
 # super + shift + w
      # rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
@@ -100,7 +109,7 @@ super + c
 super + shift + m
     rofi -show emoji -modi emoji -p "EMOJ" -font "Nerd Hack font 10" -location 1 -width 20 -lines 100
 
-# DMENU BOOKMARKS
+# BOOKMARKS
 super + shift + b
     ~/bin/env/scripts/bookmarks/bookmarks.sh
 
