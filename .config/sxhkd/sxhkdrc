@@ -131,6 +131,15 @@ super + shift + g
 super + shift + a
     st -n pulsemixer -e pulsemixer
 
+# PYTHON INTERPRETER
+super + ctrl + p
+    st -n python -e python
+
+# NODE INTERPRETER
+super + ctrl + n
+    st -n node -e node
+
+
 # YTOP
 super + shift + y
     st -n ytop -e ytop -f
