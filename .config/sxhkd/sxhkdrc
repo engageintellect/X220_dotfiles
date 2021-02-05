@@ -139,6 +139,9 @@ super + ctrl + p
 super + ctrl + n
     st -n node -e node
 
+# BASIC CALCULATOR
+super + ctrl + c
+    st -n bc -e bc
 
 # YTOP
 super + shift + y
