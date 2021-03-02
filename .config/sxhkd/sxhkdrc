@@ -73,13 +73,13 @@ super + ctrl + r
     $BROWSER https://robinhood.com
  
 super + ctrl + w
-    $BROWSER https://app.webull.com
+    bspc desktop -f '^7' && /usr/local/WebullDesktop/WebullDesktop
 
 super + ctrl + y
     bspc desktop -f '^1'; cryptowatch_desktop 
 
-super + ctrl + h
-    bspc desktop -f '^1'; surf https://finviz.com/map.ashx; bspc node -t \~floating
+# super + ctrl + h
+    # bspc desktop -f '^1'; surf https://finviz.com/map.ashx
     
 
     

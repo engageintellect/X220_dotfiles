@@ -35,7 +35,8 @@ bspc monitor LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' '' ' ' '�
 #📈
 # EXTERNAL DISPLAYS
 bspc monitor DisplayPort-1 -d   
-bspc monitor VGA1 -d                  
+# bspc monitor VGA1 -d                  
+bspc monitor VGA1 -d                 
 
 
 #===[ WINDOW SETTINGS ]===#
@@ -103,6 +104,7 @@ bspc rule -a Emacs state=tiled rectangle=900x600+0+0 center=true
 bspc rule -a "VirtualBox Manager" desktop='^8' state=floating rectangle=900x600+0+0 center=true
 bspc rule -a firefox rectangle=900x600+0+0 center=true
 bspc rule -a Spotify desktop='^5' state=floating rectangle=1200x600+0+0 center=true
+bspc rule -a "Webull Desktop" desktop='^8' state=tiled rectangle=1200x600+0+0 center=true
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off

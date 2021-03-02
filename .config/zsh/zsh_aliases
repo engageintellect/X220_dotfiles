@@ -88,7 +88,7 @@ alias x220='ssh 192.168.0.253 -p 4320'
 # alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@54.177.92.108'
 alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@3.101.45.224'
 alias imac='ssh josh@192.168.0.44'
-alias pi_raspbian='ssh pi@192.168.0.184'
+alias pi_raspbian='ssh pi@192.168.0.185'
 alias pi_manjaro='ssh r3dux@192.168.0.186'
 
 
