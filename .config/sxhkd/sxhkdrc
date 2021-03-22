@@ -66,11 +66,15 @@ super + shift + p
 
 
 #==[ TRADING ]==#
+
+super + shift + t
+    bspc desktop -f '^8' && ~/thinkorswim/thinkorswim
+
 super + ctrl + t
     $BROWSER https://tradingview.com/chart
     
 super + ctrl + r
-    $BROWSER https://robinhood.com
+ #   $BROWSER https://robinhood.com
  
 super + ctrl + w
     bspc desktop -f '^7' && /usr/local/WebullDesktop/WebullDesktop
