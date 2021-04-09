@@ -220,6 +220,12 @@ py()
 }
 
 
+#=[ STOCKS ]=#
+stocks()
+{
+    python ~/code/python/projects/stocks/main.py
+}
+
 
 
 # TEST FUNCTION

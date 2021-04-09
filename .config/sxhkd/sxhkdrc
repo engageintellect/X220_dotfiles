@@ -40,7 +40,11 @@ super + shift + n
     #~/bin/env/networkmanager_dmenu_pywal.sh
     #networkmanager_dmenu  -fn 'mononoki Nerd Font-10' -nb '#000000' -sf '#000000' -sb '#ffffff' -nf '#ffffff'
 
-# EDIT CONFIGS
+# edit configs
+super + ctrl + e
+    ~/bin/env/display_settings/set_monitors.sh
+
+# edit configs
 super + shift + e
     ~/bin/env/scripts/edit_configs.sh
 
@@ -71,13 +75,13 @@ super + shift + t
     bspc desktop -f '^8' && ~/thinkorswim/thinkorswim
 
 super + ctrl + t
-    $BROWSER https://tradingview.com/chart
+    bspc desktop -f '^7' && $BROWSER https://tradingview.com/chart
     
-super + ctrl + r
- #   $BROWSER https://robinhood.com
+super + ctrl + b
+    bspc desktop -f '^8' && $BROWSER https://robinhood.com
  
 super + ctrl + w
-    bspc desktop -f '^7' && /usr/local/WebullDesktop/WebullDesktop
+    bspc desktop -f '^8' && /usr/local/WebullDesktop/WebullDesktop
 
 super + ctrl + y
     bspc desktop -f '^1'; cryptowatch_desktop 
