@@ -1,38 +1,35 @@
-#              _     _       _
-#     _____  _| |__ | | ____| |  _ __ ___
-#    / __\ \/ / '_ \| |/ / _` | | '__/ __|
-#    \__ \>  <| | | |   < (_| | | | | (__
-#    |___/_/\_\_| |_|_|\_\__,_| |_|  \___|
+#          _     _       _
+# _____  _| |__ | | ____| |  _ __ ___
+#/ __\ \/ / '_ \| |/ / _` | | '__/ __|
+#\__ \>  <| | | |   < (_| | | | | (__
+#|___/_/\_\_| |_|_|\_\__,_| |_|  \___|
 #
-# Build: ThinkPad X220 
+# Build: Macbook Pro 
 # Version: 2.0
 
 ####################################################################################
-#                                                                                  #
-# CUSTOM BINDINGS                                                                  #
-#                                                                                  #
+#                 
+# CUSTOM BINDINGS 
+#                 
 ####################################################################################
 
 
 #===[ UTILITIES ]===#
 
 # TERMINAL 
-button2
-    st
 super + Return
     st
-	#st -e zsh -c tmux
+
 super + a
     kitty
 
 # SCRATCHPAD
-Menu
+super + ctrl + Return
     {~/bin/env/scratchy.sh, bspc node -c}
 
-# LAUNCHER
-super + d
-    rofi -show run -p "RUN" -font "Hack Nerd Font 10" -location 0 -width 20 -lines 10
-    # ~/bin/env/pywal/dmenu_pywal.sh
+# DMENU
+super + shift + d
+    ~/bin/env/pywal/dmenu_pywal.sh
 
 # NETWORK
 super + shift + n
@@ -40,17 +37,10 @@ super + shift + n
     #~/bin/env/networkmanager_dmenu_pywal.sh
     #networkmanager_dmenu  -fn 'mononoki Nerd Font-10' -nb '#000000' -sf '#000000' -sb '#ffffff' -nf '#ffffff'
 
-# edit configs
-super + ctrl + e
-    ~/bin/env/display_settings/set_monitors.sh
-
-# edit configs
+# EDIT CONFIGS
 super + shift + e
-    ~/bin/env/scripts/edit_configs.sh
-
-# COMPILE SUCKLESS
-super + shift + c
-    ~/bin/env/scripts/compile_suckless.sh
+    ~/bin/env/scripts/rofi/edit_configs.sh
+    # ~/bin/env/scripts/dmenu/dmenu_edit_configs.sh
 
 # CLIPMENU
 super + x
@@ -62,43 +52,40 @@ super + b
 
 # TOGGLE POLYBAR
 super + p
-    polybar-msg cmd {hide && bspc config top_padding 0, show && bspc config top_padding 25 && bspc config top_padding 25} 
+    polybar-msg cmd {hide && bspc config top_padding 0, show && bspc config top_padding 30 && bspc config top_padding 30} 
 
 # RELOAD POLYBAR
 super + shift + p
-    killall polybar && polybar -r new && bspc config top_padding 25
+    killall polybar && polybar -r new && bspc config top_padding 30
 
 
 #==[ TRADING ]==#
 
 super + shift + t
-    bspc desktop -f '^8' && ~/thinkorswim/thinkorswim
+    bspc desktop -f '^7' && ~/.bin/thinkorswim/thinkorswim
 
 super + ctrl + t
-    bspc desktop -f '^7' && $BROWSER https://tradingview.com/chart
-    
-super + ctrl + b
-    bspc desktop -f '^8' && $BROWSER https://robinhood.com
- 
+    $BROWSER https://tradingview.com/chart
+
+# super + ctrl + r
+#     $BROWSER https://robinhood.com
+
 super + ctrl + w
-    bspc desktop -f '^8' && /usr/local/WebullDesktop/WebullDesktop
+    bspc desktop -f '^7' && /usr/local/WebullDesktop/WebullDesktop
 
 super + ctrl + y
-    bspc desktop -f '^1'; cryptowatch_desktop 
+    bspc desktop -f '^1'; ~/.bin/cryptowatch_desktop
 
 # super + ctrl + h
     # bspc desktop -f '^1'; surf https://finviz.com/map.ashx
-    
 
-    
-    
+
 
 #==[ ROFI ]==#
 
 # ROFI RUN
-super + shift + d
-    ~/bin/env/pywal/dmenu_pywal.sh
-    # rofi -show run -lines 6 -eh 2 -width 350 -padding 20 -font "Hack Nerd Font 10"
+super +  d
+     rofi -show run -lines 6 -eh 2 -width 400 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
 
 # ROFI GOOGLE SEARCH
 super + shift + s
@@ -108,24 +95,27 @@ super + shift + s
 super + shift + u
     ~/bin/env/scripts/surf/rofi_url_surf.sh
 
-# ROFI WINDOWS
-# super + shift + w
-     # rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
-# ROFI SSH
-# super + shift + s
-     # rofi -show ssh -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
- # ROFI COMBI
-# super + shift + c
-     # rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
 
+
+# # ROFI WINDOWS
+# super + shift + w
+#      rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
+# # ROFI SSH
+# super + shift + s
+#      rofi -show ssh -lines 6 -eh 2 -width 300 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
+#  # ROFI COMBI
+# super + shift + c
+#      rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
 
 
 #===[ BROWSERS ]===#
 
 super + s 
     surf -N -z 1.0 https://web.tabliss.io/ 
-super + i
+super + w
     bspc desktop -f '^3' && qutebrowser
+super + f
+    firefox
 super + c
     chromium
 
@@ -136,9 +126,16 @@ super + c
 super + shift + m
     rofi -show emoji -modi emoji -p "EMOJ" -font "Nerd Hack font 10" -location 1 -width 20 -lines 100
 
-# BOOKMARKS
+
+# DMENU BOOKMARKS
 super + shift + b
     ~/bin/env/scripts/bookmarks/bookmarks.sh
+    # ~/bin/env/scripts/rofi/bookmarks.sh
+    
+# COMPILE SUCKLESS
+super + shift + c
+    ~/bin/env/scripts/rofi/compile_suckless.sh
+    # ~/bin/env/scripts/surf/bookmarks.sh
 
 # WALLY
 super + shift + w
@@ -149,10 +146,10 @@ super + y
     bspc desktop -f '^5' && chromium --new-window --app=https://youtube.com
 
 # EMAIL
-super + g
-    bspc desktop -f '^6' && surf gmail.com
 super + shift + g
     bspc desktop -f '^6' && st -e mutt
+super + g
+    bspc desktop -f '^6' && surf gmail.com
 
 # PULSEMIXER
 super + shift + a
@@ -180,7 +177,7 @@ super + m
 
 # VIRTUALBOX
 super + v
-    bspc desktop -f '^7' && virtualbox
+    bspc desktop -f '^9' && virtualbox
 
 # EMACS
 super + e
@@ -191,13 +188,13 @@ super + n
     bspc desktop -f '^5' && chromium --new-window --app=https://netflix.com
 
 # SCREENSHOT
-Print
+# Print
+super + ctrl + s
     ~/bin/env/screenshot.sh
 
 # LOCK
 Scroll_Lock
     slock
-
 
 
 #===[ BSPWM BINDINGS ]===#
@@ -215,15 +212,12 @@ super + ctrl + q
     killall -q bspwm
 
 # CLOSE AND KILL
-super + button2
-	bspc node -{c,k}
-
 super + {_,shift + }q
 	bspc node -{c,k}
 
-# # TOGGLE MONOCLE LAYOUT
+# TOGGLE MONOCLE LAYOUT
 # super + shift + m
-# 	bspc desktop -l next
+	# bspc desktop -l next
 
 # TOGGLE FULLSCREEN
 super + Tab
@@ -258,9 +252,9 @@ super + shift + Return
 	bspc node -s biggest
 
 ####################################################################################
-#                                                                                  #
-# FOCUS / SWAP WINDOWS                                                             #
-#                                                                                  #
+#
+# FOCUS / SWAP
+#
 ####################################################################################
 
 # MOVE WINDOWS
@@ -302,9 +296,9 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 ####################################################################################
-#                                                                                  #
-# PRESELECT                                                                        #
-#                                                                                  #
+#
+# PRESELECT
+#
 ####################################################################################
 
 # PRESELECT DIRECTION
@@ -324,9 +318,9 @@ super + alt + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 ####################################################################################
-#                                                                                  #
-# MOVE / RESIZE                                                                    #
-#                                                                                  #
+#
+# MOVE / RESIZE
+#
 ####################################################################################
 
 # EXPAND WINDOW OUTWARD 
@@ -343,26 +337,26 @@ super + {Left,Down,Up,Right}
 
 # CHANGE WINDOW GAP SIZE
 alt + k
-	bspc config window_gap {0,6,12,18,32,48,64,96,128}
+	bspc config window_gap {0,6,12,18,32,48,64,86}
 alt + j
 	bspc config window_gap {0,2,4,6,8,10,12}
 
 # EXPAND/CONTRACT FLOATING WINDOWS ON ALL SIDES
 alt + h
 	bspc node -z left -20 0; \
-	bspc node -z bottom 0 20; \
-	bspc node -z top 0 -20; \
+	bspc node -z bottom 0 10; \
+	bspc node -z top 0 -10; \
 	bspc node -z right 20 0
 alt + l
 	bspc node -z left 20 0; \
-	bspc node -z bottom 0 -20; \
-	bspc node -z top 0 20; \
+	bspc node -z bottom 0 -10; \
+	bspc node -z top 0 10; \
 	bspc node -z right -20 0
 
 ####################################################################################
-#                                                                                  #
-# HARDWARE CONTROLS                                                                #
-#                                                                                  #
+#
+# HARDWARE CONTROLS
+#
 ####################################################################################
 
 # KEYBOARD VOLUME CONTROL
