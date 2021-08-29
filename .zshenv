@@ -16,8 +16,13 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 #DISPLAY
 export DISPLAY=:0 xsel
 
+# JAVA
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # DEFAULT PROGRAMS
 export EDITOR='nvim'
+export SUDO_EDITOR='nvim'
+export VISUAL='nvim'
 export TERMINAL='st'
 export BROWSER='qutebrowser'
 
@@ -27,6 +32,7 @@ export PATH="/home/r3dux/scripts:$PATH"
 export PATH="/home/r3dux/bin:$PATH"
 export PATH="/home/r3dux/.emacs.d/bin:$PATH"
 export PATH="/home/r3dux/.bin:$PATH"
+export PATH="/home/r3dux/.local/bin:$PATH"
 
 # PYTHON 
 export PATH="/home/r3dux/.local/lib/python3.8:$PATH"
