@@ -279,7 +279,6 @@ paclist()
 {
     pacman --color=always -Q | less
     name=$(cat /etc/hostname)
-    cd ~/
     pacman --color=always -Q > ~/docs/system_setup/paclist/$name-paclist.txt
 }
 
