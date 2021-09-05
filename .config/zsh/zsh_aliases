@@ -6,7 +6,7 @@
 #                 |_____|
 #    
 #    
-#    BUILD: X220
+#    BUILD: MacBook Pro
 #    VERSION: 2.0
 
 
@@ -250,14 +250,6 @@ crypto()
     python ~/code/python/projects/coincheck/main.py
 
 }
-
-#=[ NOTES ]=#
-
-notes() 
-{
-    python ~/notes/main.py
-}
-
 
 #=[ SCREEN RECORD ]=#
 
