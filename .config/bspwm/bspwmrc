@@ -15,7 +15,7 @@
 
 #===[ AUTOSTART ]===#
 
-/home/r3dux/bin/env/environment.sh
+$HOME/bin/env/environment.sh
 
 
 #===[ WORKSPACES ]===#

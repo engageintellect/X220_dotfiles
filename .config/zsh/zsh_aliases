@@ -85,7 +85,7 @@ alias autoclean='sudo pacman -Qdt'
 
 
 #===[ SSH ]===#
-alias MBP='ssh 192.168.0.244 -p 4320'
+alias MBP='ssh 192.168.0.243 -p 4320'
 alias SB2='ssh 192.168.0.157 -p 4320'
 alias x220='ssh 192.168.0.253 -p 4320'
 alias fa='ssh -i "~/docs/keys/firstam_aws.pem" ubuntu@3.101.42.200'
