@@ -26,6 +26,7 @@ alert = ${xrdb:color3:#222}
 [bar/new]
 ; monitor = ${env:MONITOR:VGA1}
 ; monitor1 = ${env:MONITOR:LVDS1}
+monitor1 = ${env:MONITOR:DP1}
 width = 100%
 height = 25
 offset-x = 0%
