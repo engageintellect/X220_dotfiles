@@ -77,6 +77,7 @@ alias reddit='rtv'
 
 #===[ PACMAN ]===#
 alias update='sudo pacman --color auto -Syyu'
+alias upgrade='sudo pacman --color auto -Syyu --noconfirm && paru'
 alias search='pacman --color auto -Ss'
 alias ipkg='pacman -Si'
 alias install='sudo pacman --color auto -S'
@@ -87,8 +88,8 @@ alias autoclean='sudo pacman -Qdt'
 
 
 #===[ SSH ]===#
-alias MBP='ssh 192.168.0.238 -p 4320'
-alias SB2='ssh 192.168.0.153 -p 4320'
+alias MBP='ssh 192.168.0.239 -p 4320'
+alias SB2='ssh 192.168.0.155 -p 4320'
 alias x220='ssh 192.168.0.253 -p 4320'
 # alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@54.177.92.108'
 alias fa='ssh -i "~/docs/keys/firstam_aws.pem" ubuntu@13.57.56.155'
@@ -264,7 +265,7 @@ rs()
 
 mine() 
 {
-    clear && figlet "XMRIG"
+    clear && figlet "XMRIG-X220" && echo -e "\n"
     xmrig -k -B -p x --av=3 -t 4
 
 }

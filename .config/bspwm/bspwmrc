@@ -35,11 +35,11 @@ bspc monitor LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '�
 # WIDESCREEN DISPLAY
 bspc monitor LVDS1 -d ' ' 
 bspc monitor DP1 -d ' ' ' ' ' ' ' ' ' ' '' ' ' ' ' ' '
-bspc monitr LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' '' ' ' ' ' ' '
+# bspc monitr LVDS1 -d ' ' ' ' ' ' ' ' ' ' ' ' '' ' ' ' ' ' '
 
 # EXTERNAL DISPLAYS
-bspc monitor DisplayPort-1 -d   
-bspc monitor VGA1 -d                 
+# bspc monitor DisplayPort-1 -d   
+# bspc monitor VGA1 -d                 
 
 
 #===[ WINDOW SETTINGS ]===#
