@@ -7,16 +7,14 @@
 #    
 #    
 #    BUILD: ThinkPad X220
-#    VERSION: 1.0
+#    VERSION: 2.0
 #    
 #------------------------------------------------
 # ALIASES
 #------------------------------------------------
 
-
-
 #-----------------------
-#===[ ZSH ]===#
+# ZSH 
 #-----------------------
 alias zaliases='nvim ~/.config/zsh/zsh_aliases'
 alias update-zsh='upgrade_oh_my_zsh'
@@ -25,7 +23,7 @@ alias zshenv='nvim ~/.zshenv'
 alias zprofile='nvim ~/.config/zsh/.zprofile'
 
 #-----------------------
-#===[ MAIN ]===#
+# MAIN 
 #-----------------------
 alias h='cd'
 alias o='xdg-open'
@@ -79,9 +77,8 @@ alias transmission='transmission-cli'
 alias mix='pulsemixer'
 alias reddit='rtv'
 
-
 #-----------------------
-#===[ PACMAN ]===#
+# PACMAN 
 #-----------------------
 alias update='sudo pacman --color auto -Syyu'
 alias upgrade='sudo pacman --color auto -Syyu --noconfirm && paru && sudo pacman -Q > $HOME/docs/paclist.txt'
@@ -93,43 +90,37 @@ alias remove='sudo pacman --color auto -Rns'
 alias psearch='pacman --color auto -Q | grep'
 alias autoclean='sudo pacman -Qdt'
 
-
 #-----------------------
-#===[ SSH ]===#
+# SSH 
 #-----------------------
 alias MBP='ssh 192.168.0.238 -p 4320'
 alias SB2='ssh 192.168.0.155 -p 4320'
 alias x220='ssh 192.168.0.253 -p 4320'
-# alias server='ssh -i "~/docs/keys/ubuntu_aws.pem" ubuntu@54.177.92.108'
-alias fa='ssh -i "~/docs/keys/firstam_aws.pem" ubuntu@13.57.56.155'
-alias kali='ssh -i ~/docs/keys/kali_aws.pem kali@3.92.92.136'
 alias imac='ssh josh@192.168.0.45'
 alias air='ssh jana@192.168.0.80'
 alias pi_raspbian='ssh pi@192.168.0.184'
 alias pi_manjaro='ssh pi@192.168.0.185'
 
-
 #-----------------------
-#===[ DMENU ALIASES ]===#
+# DMENU ALIASES 
 #-----------------------
 alias dmenu='dmenu -fn "Hack Nerd Font -12" -h 30 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -nhb "$color3" -nhf "$color0" -shb "$color3" -shf "$color15" -c -l 12'
 alias dmenu_run='dmenu_run -fn "Hack Nerd Font -12" -h 30 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -nhb "$color3" -nhf "$color0" -shb "$color3" -shf "$color15" -c -l 12'
 
-
 #-----------------------
-#===[ GIT BARE REPO ]===#
+# GIT BARE REPO 
 #-----------------------
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
 
 
-
-#######################################################################################################################################################################################################
+#------------------------------------------------------------------------------------------------
+#
 # FUNCTIONS
-#######################################################################################################################################################################################################
-
+#
+#------------------------------------------------------------------------------------------------
 
 #-----------------------
-#=[ FFF ]=#
+# FFF 
 #-----------------------
 
 f() 
@@ -140,7 +131,7 @@ f()
 
 
 #-----------------------
-#=[ CD LS ]=#
+# CD LS 
 #-----------------------
 
 c()
@@ -150,7 +141,7 @@ c()
 
 
 #-----------------------
-#=[ MAKE GIT REPO ]=#
+# MAKE GIT REPO 
 #-----------------------
 
 mkgit() 
@@ -160,7 +151,7 @@ mkgit()
 
 
 #-----------------------
-#=[ REMOVE GIT REPO ]=#
+# REMOVE GIT REPO 
 #-----------------------
 
 rmgit() 
@@ -170,11 +161,12 @@ rmgit()
 
 
 #-----------------------
-#=[ GIT ADD, COMMIT, PUSH ]=#
+# GIT ADD, COMMIT, PUSH 
 #-----------------------
 
 acp()
 {
+    git status
     git add --all
     git commit -m $1
     git push
@@ -182,7 +174,7 @@ acp()
 
 
 #-----------------------
-#=[ FZF PHOTOS ]=#
+# FZF PHOTOS 
 #-----------------------
 
 photos() 
@@ -192,7 +184,7 @@ photos()
 
 
 #-----------------------
-#=[ COMPILE SUCKLESS ]=#
+# COMPILE SUCKLESS 
 #-----------------------
 
 scomp() 
@@ -204,7 +196,7 @@ scomp()
 
 
 #-----------------------
-#=[ VIM OPEN ]=#
+# VIM OPEN 
 #-----------------------
 
 
@@ -216,7 +208,7 @@ v()
 
 
 #-----------------------
-#=[ EDIT CONFIGS ]=#
+# EDIT CONFIGS 
 #-----------------------
 
 econf() 
@@ -227,7 +219,7 @@ econf()
 
 
 #-----------------------
-#=[ PAC-INSTALL ]=#
+# PAC-INSTALL 
 #-----------------------
 
 sp() 
@@ -240,7 +232,7 @@ sp()
 
 
 #-----------------------
-#=[ PAC-REMOVE ]=#
+# PAC-REMOVE 
 #-----------------------
 
 rp() 
@@ -253,7 +245,7 @@ rp()
 
 
 #-----------------------
-#=[ FZF-KILL ]=#
+# FZF-KILL 
 #-----------------------
 
 fkill() 
@@ -267,7 +259,7 @@ fkill()
 
 
 #-----------------------
-#=[ CHEATSHEET ]=#
+# CHEATSHEET 
 #-----------------------
 
 cheat() 
@@ -278,7 +270,7 @@ cheat()
 
 
 #-----------------------
-#=[ STOCKS ]=#
+# STOCKS 
 #-----------------------
 
 stocks() 
@@ -290,7 +282,7 @@ stocks()
 
 
 #-----------------------
-#=[ CRYPTO ]=#
+# CRYPTO 
 #-----------------------
 
 crypto() 
@@ -300,7 +292,7 @@ crypto()
 }
 
 #-----------------------
-#=[ SCREEN RECORD ]=#
+# SCREEN RECORD 
 #-----------------------
 
 rs()
@@ -309,7 +301,7 @@ rs()
 }
 
 #-----------------------
-#=[ XMRIG ]=#
+# XMRIG 
 #-----------------------
 
 mine() 
@@ -319,7 +311,7 @@ mine()
 
 }
 #-----------------------
-#=[ GEN PACLIST ]=#
+# GEN PACLIST 
 #-----------------------
 
 gen_paclist()
@@ -329,7 +321,7 @@ gen_paclist()
 }
 
 #-----------------------
-#=[ NMAP ]=#
+# NMAP 
 #-----------------------
 
 map()
