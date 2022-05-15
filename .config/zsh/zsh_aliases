@@ -106,7 +106,7 @@ alias kali='ssh -i ~/docs/keys/kali_aws.pem kali@3.92.92.136'
 alias imac='ssh josh@192.168.0.45'
 alias air='ssh jana@192.168.0.80'
 alias pi_raspbian='ssh pi@192.168.0.184'
-alias pi_manjaro='ssh pi@192.168.0.186'
+alias pi_manjaro='ssh pi@192.168.0.185'
 
 
 #-----------------------
