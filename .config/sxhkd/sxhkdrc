@@ -103,36 +103,49 @@ super + ctrl + y
 
 
 
-#-----------------------
+#------------------------------------------------
 # ROFI 
-#-----------------------
+#------------------------------------------------
 
+#-----------------------
 # ROFI RUN
+#-----------------------
 super +  d
     ~/bin/env/scripts/rofi/rofi_run.sh
      
-
+#-----------------------
 # ROFI GOOGLE SEARCH
+#-----------------------
 super + shift + s
     ~/bin/env/scripts/rofi/rofi_google_search.sh
 
+#-----------------------
 # ROFI URL SURF
+#-----------------------
 super + shift + u
     ~/bin/env/scripts/rofi/rofi_url_surf.sh
 
+#-----------------------
 # EMOJIS
+#-----------------------
 super + shift + m
     ~/bin/env/scripts/rofi/rofi_show_emoji.sh
 
-
-
-# # ROFI WINDOWS
+#-----------------------
+# ROFI WINDOWS
+#-----------------------
 # super + shift + w
 #      rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
-# # ROFI SSH
+
+#-----------------------
+# ROFI SSH
+#-----------------------
 # super + shift + s
 #      rofi -show ssh -lines 6 -eh 2 -width 300 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
-#  # ROFI COMBI
+
+#-----------------------
+ # ROFI COMBI
+#-----------------------
 # super + shift + c
 #      rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
 
@@ -149,6 +162,8 @@ super + f
     firefox
 super + c
     chromium
+
+
 
 
 #------------------------------------------------
