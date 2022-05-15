@@ -4,92 +4,204 @@
 #\__ \>  <| | | |   < (_| | | | | (__
 #|___/_/\_\_| |_|_|\_\__,_| |_|  \___|
 #
-# Build: ThinkPad X220
-# Version: 1.0
+# Build: Macbook Pro 
+# Version: 2.0
+
+####################################################################################
+#                 
+# CUSTOM BINDINGS 
+#                 
+####################################################################################
 
 
-###################
-#                 #
-# CUSTOM BINDINGS #
-#                 #
-###################
+#===[ UTILITIES ]===#
 
-# TERMINAL
+# TERMINAL 
 super + Return
-	st
+    st
+
 super + a
-    alacritty
+    kitty
 
 # SCRATCHPAD
-super + shift + Return
-    ~/bin/scratchy.sh
+super + ctrl + Return
+    {~/bin/env/scratchy.sh, bspc node -c}
 
-# LAUNCHERS
-super + d
-	dmenu_run -fn 'mononoki Nerd Font -12' -nb '#000000' -sf '#000000' -sb '#ffffff' -nf '#ffffff' -p 'Run: ' -h 30
+# DMENU
+super + shift + d
+    ~/bin/env/pywal/dmenu_pywal.sh
 
-# REDLOAD SXHKD CONFIG 
-super + shift + r
-	pkill -USR1 -x sxhkd
-
-# SCREEN LOCK
-super + shift + e
-    i3lock-fancy 
-    #blurlock 
-
-# NETWORK MANAGER
+# NETWORK
 super + shift + n
-    networkmanager_dmenu -fn 'mononoki Nerd Font -10' -nb '#000000' -sf '#000000' -sb '#ffffff' -nf '#ffffff' -w 600
+    st -n iwctl -e iwctl
+    #~/bin/env/networkmanager_dmenu_pywal.sh
+    #networkmanager_dmenu  -fn 'mononoki Nerd Font-10' -nb '#000000' -sf '#000000' -sb '#ffffff' -nf '#ffffff'
 
-# WALLY
-super + shift + b
-    ~/bin/wally.py
+# EDIT CONFIGS
+super + shift + e
+    ~/bin/env/scripts/rofi/edit_configs.sh
+    # ~/bin/env/scripts/dmenu/dmenu_edit_configs.sh
 
-# BROWSERS
+# CLIPMENU
+super + x
+    ~/bin/env/pywal/clipmenu_pywal.sh
+
+# BATT
+super + b
+    ~/bin/env/batt.sh
+
+# TOGGLE POLYBAR
+super + p
+    polybar-msg cmd {hide && bspc config top_padding 0, show && bspc config top_padding 30 && bspc config top_padding 30} 
+
+# RELOAD POLYBAR
+super + shift + p
+    killall polybar && polybar -r new && bspc config top_padding 30
+
+
+#==[ TRADING ]==#
+
+super + shift + t
+    bspc desktop -f '^7' && ~/.bin/thinkorswim/thinkorswim
+
+super + ctrl + t
+    $BROWSER https://tradingview.com/chart
+
+# super + ctrl + r
+#     $BROWSER https://robinhood.com
+
+super + ctrl + w
+    bspc desktop -f '^7' && /usr/local/WebullDesktop/WebullDesktop
+
+super + ctrl + y
+    bspc desktop -f '^1'; ~/.bin/cryptowatch_desktop
+
+# super + ctrl + h
+    # bspc desktop -f '^1'; surf https://finviz.com/map.ashx
+
+
+
+#==[ ROFI ]==#
+
+# ROFI RUN
+super +  d
+     rofi -show run -lines 6 -eh 2 -width 400 -padding 20 -opacity "20" -font "Hack Nerd Font 10"
+
+# ROFI GOOGLE SEARCH
+super + shift + s
+    ~/bin/env/scripts/surf/rofi_google_search.sh
+
+# ROFI URL SURF
+super + shift + u
+    ~/bin/env/scripts/surf/rofi_url_surf.sh
+
+
+
+# # ROFI WINDOWS
+# super + shift + w
+#      rofi -show window -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
+# # ROFI SSH
+# super + shift + s
+#      rofi -show ssh -lines 6 -eh 2 -width 300 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
+#  # ROFI COMBI
+# super + shift + c
+#      rofi -show combi -lines 12 -eh 2 -width 600 -padding 20 -opacity "20" -font "Hack Nerd Font 12"
+
+
+#===[ BROWSERS ]===#
+
 super + s 
-    surf -z .90 https://web.tabliss.io/
-super + i
-    bspc desktop -f '^2' && qutebrowser
+    surf -N -z 1.0 https://web.tabliss.io/ 
+super + w
+    bspc desktop -f '^3' && qutebrowser
 super + f
     firefox
+super + c
+    chromium
+
+
+#==[ PROGRAM BINDINGS ]===#
+
+# EMOJIS
+super + shift + m
+    rofi -show emoji -modi emoji -p "EMOJ" -font "Nerd Hack font 10" -location 1 -width 20 -lines 100
+
+
+# DMENU BOOKMARKS
+super + shift + b
+    ~/bin/env/scripts/bookmarks/bookmarks.sh
+    # ~/bin/env/scripts/rofi/bookmarks.sh
+    
+# COMPILE SUCKLESS
+super + shift + c
+    ~/bin/env/scripts/rofi/compile_suckless.sh
+    # ~/bin/env/scripts/surf/bookmarks.sh
+
+# WALLY
+super + shift + w
+    ~/bin/env/wally.py
 
 # YOUTUBE
 super + y
-    bspc desktop -f '^5' && qutebrowser youtube.com
+    bspc desktop -f '^5' && chromium --new-window --app=https://youtube.com
 
 # EMAIL
-super + g
-    bspc desktop -f '^10' && st -e mutt
 super + shift + g
-    bspc desktop -f '^10' && surf gmail.com
+    bspc desktop -f '^6' && st -e mutt
+super + g
+    bspc desktop -f '^6' && surf gmail.com
 
 # PULSEMIXER
 super + shift + a
     st -n pulsemixer -e pulsemixer
 
+# PYTHON INTERPRETER
+super + ctrl + p
+    st -n python -e python
+
+# NODE INTERPRETER
+super + ctrl + n
+    st -n node -e node
+
+# BASIC CALCULATOR
+super + ctrl + c
+    st -n bc -e bc
+
 # YTOP
 super + shift + y
-    st -n ytop -e ytop
+    st -n ytop -e ytop -f
 
-# SPOTIFY
+# APPLE MUSIC
 super + m
-    bspc desktop -f '^5' && spotify
+    bspc desktop -f '^5' && chromium --new-window --app=https://music.apple.com
 
-# PCMANFM
+# VIRTUALBOX
+super + v
+    bspc desktop -f '^9' && virtualbox
+
+# EMACS
 super + e
-    pcmanfm
+    bspc desktop -f '^10' && emacs
 
-# NITROGEN
+# NETFLIX
 super + n
-    nitrogen
+    bspc desktop -f '^5' && chromium --new-window --app=https://netflix.com
 
 # SCREENSHOT
-Print
-    scrot
+# Print
+super + ctrl + s
+    ~/bin/env/screenshot.sh
 
 # LOCK
 Scroll_Lock
-    blurlock
+    slock
+
+
+#===[ BSPWM BINDINGS ]===#
+
+# REDLOAD SXHKD CONFIG 
+super + shift + r
+	pkill -USR1 -x sxhkd
 
 # RELOAD BSPWM
 super + ctrl + r
@@ -104,8 +216,8 @@ super + {_,shift + }q
 	bspc node -{c,k}
 
 # TOGGLE MONOCLE LAYOUT
-super + shift + m
-	bspc desktop -l next
+# super + shift + m
+	# bspc desktop -l next
 
 # TOGGLE FULLSCREEN
 super + Tab
@@ -133,53 +245,61 @@ super + ctrl + {m,x,y,z}
 
 # SEND NEW NODE TO NEWEST PRESELECT
 super + shift + p
-	bspc node newes.marked.local -n newest.!automatic.local
+	# bspc node newes.marked.local -n newest.!automatic.local
 
 # SWAP CURRENT WITH BIGGEST
-super + shift + s
+super + shift + Return
 	bspc node -s biggest
 
-################
-#              #
-# FOCUS / SWAP #
-#              #
-################
+####################################################################################
+#
+# FOCUS / SWAP
+#
+####################################################################################
 
 # MOVE WINDOWS
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-# FOCUS NODE FOR GIVEN PATH JUMP
-super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+# MIRROR AND FLIP LEAVES OF TREE
+super + {comma,period}
+	bspc node @/ -F {horizontal,vertical}
 
-# FOCUS NEXT/PREVIOUS NODE IN CURRENT DESKTOP
+# ROTATE STACK 
+super + shift + {period,comma}
+	bspc node @/ -R {90,270}
+
+# FOCUS NODE FOR GIVEN PATH JUMP
+#super + {p,b,comma,period}
+#	bspc node -f @{parent,brother,first,second}
+
+ # FOCUS NEXT/PREVIOUS NODE IN CURRENT DESKTOP
 super + {_,shift + }semicolon
-	bspc node -f {next,prev}.local
+    bspc node -f next.local
 
 # FOCUS NEXT/PREVIOUS DESKTOP IN CURRENT MONITOR
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+#super + bracket{left,right}
+#	bspc desktop -f {prev,next}.local
 
-# FOCUS THE LAST NODE/DESKTOP
-super + {grave,Tab}
+## FOCUS THE LAST NODE/DESKTOP
+alt + {grave,Tab}
 	bspc {node,desktop} -f last
 
-# FOCUS OLDER OR NEWER NODE IN THE FOCUS HISTORY
-super + ctrl + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+## FOCUS OLDER OR NEWER NODE IN THE FOCUS HISTORY
+#super + ctrl + {o,i}
+#	bspc wm -h off; \
+#	bspc node {older,newer} -f; \
+#	bspc wm -h on
 
 # MOVE WORKSPACES
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-#############
-#           #
-# PRESELECT #
-#           #
-#############
+####################################################################################
+#
+# PRESELECT
+#
+####################################################################################
 
 # PRESELECT DIRECTION
 super + alt {h,j,k,l}
@@ -197,11 +317,11 @@ super + alt + space
 super + alt + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#################
-#               #
-# MOVE / RESIZE #
-#               #
-#################
+####################################################################################
+#
+# MOVE / RESIZE
+#
+####################################################################################
 
 # EXPAND WINDOW OUTWARD 
 super + ctrl + {h,j,k,l}
@@ -217,9 +337,9 @@ super + {Left,Down,Up,Right}
 
 # CHANGE WINDOW GAP SIZE
 alt + k
-	bspc config window_gap {0,12,16,32,46,64,84}
+	bspc config window_gap {0,6,12,18,32,48,64,86}
 alt + j
-	bspc config window_gap {0,2,4,6,8,10,12,14,16,18,20}
+	bspc config window_gap {0,2,4,6,8,10,12}
 
 # EXPAND/CONTRACT FLOATING WINDOWS ON ALL SIDES
 alt + h
@@ -233,22 +353,26 @@ alt + l
 	bspc node -z top 0 10; \
 	bspc node -z right -20 0
 
-#####################
-#                   #
-# HARDWARE CONTROLS #
-#                   #
-#####################
+####################################################################################
+#
+# HARDWARE CONTROLS
+#
+####################################################################################
 
 # KEYBOARD VOLUME CONTROL
 
 XF86AudioRaiseVolume
     pactl set-sink-volume 0 +2%
- 
 XF86AudioLowerVolume
     pactl set-sink-volume 0 -2%
-
 XF86AudioMute
     pactl set-sink-mute 1 toggle
 
 
+# BRIGHTNESS CONTROL (brightnessctl)
+
+super + shift + plus
+    sudo brightnessctl set 1%+
+super + shift + minus
+    sudo brightnessctl set 1%-
 
