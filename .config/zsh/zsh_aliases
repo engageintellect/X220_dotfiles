@@ -172,6 +172,18 @@ acp()
     git push
 }
 
+#-----------------------
+# UPDATE DOTFILES 
+#-----------------------
+
+update_dotfiles()
+{
+    cd $HOME/.config/
+    dotfiles status
+    dotfiles add bspwm picom polybar sxhkd zsh rofi doom
+    dotfiles commit -m $1
+    dotfiles push
+}
 
 #-----------------------
 # FZF PHOTOS 
