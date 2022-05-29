@@ -13,7 +13,7 @@ static Parameter defconfig[ParameterLast] = {
 	SETV(CookiePolicies,     "@Aa"),
 	SETB(DiskCache,          1),
 	SETB(DNSPrefetch,        0),
-	SETI(FontSize,           12),
+	SETI(FontSize,           10),
 	SETB(FrameFlattening,    0),
 	SETB(Geolocation,        0),
 	SETB(HideBackground,     0),
@@ -32,7 +32,7 @@ static Parameter defconfig[ParameterLast] = {
 	SETV(SpellLanguages,     ((char *[]){ "en_US", NULL })),
 	SETB(StrictSSL,          0),
 	SETB(Style,              1),
-	SETF(ZoomLevel,          1.0),
+	SETF(ZoomLevel,          0.8),
 };
 
 static UriParameters uriparams[] = {
@@ -49,7 +49,7 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
         .v = (const char *[]){ "/bin/sh", "-c", \
              "prop=\"`xprop -id $2 $0 " \
              "| sed \"s/^$0(STRING) = \\(\\\\\"\\?\\)\\(.*\\)\\1$/\\2/\" " \
-             "| xargs -0 printf %b | dmenu -nb '#06080B' -sf '#06080B' -sb '#4AAFD2' -nf '#c3e0ea' -fn 'Hack Nerd Font -10' -h 25`\" &&" \
+             "| xargs -0 printf %b | dmenu -nb '#06080B' -sf '#06080B' -sb '#4AAFD2' -nf '#c3e0ea' -fn 'Hack Nerd Font -8' -h 25`\" &&" \
              "xprop -id $2 -f $1 8s -set $1 \"$prop\"", \
              p, q, winid, NULL \
         } \

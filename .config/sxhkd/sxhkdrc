@@ -155,7 +155,7 @@ super + shift + m
 #-----------------------
 
 super + s 
-    surf -N -z 1.0 https://web.tabliss.io/ 
+    surf -N -z 0.9 https://web.tabliss.io/ 
 super + w
     bspc desktop -f '^3' && qutebrowser
 super + f
