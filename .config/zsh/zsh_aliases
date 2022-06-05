@@ -100,6 +100,7 @@ alias imac='ssh josh@192.168.0.45'
 alias air='ssh jana@192.168.0.80'
 alias pi_raspbian='ssh pi@192.168.0.184'
 alias pi_manjaro='ssh pi@192.168.0.185'
+alias charm='ssh git.charm.sh'
 
 #-----------------------
 # DMENU ALIASES 
